@@ -232,7 +232,7 @@ blockquote {
     padding: 5px 0;
     box-shadow: 10px 0 0 #0071bc, -10px 0 0 #0071bc; }
   blockquote footer {
-    font-family: "Proxima Nova", "Helvetica Neue", Arial, sans-serif;
+    font-family: "Proxima Nova", "Open Sans", "Helvetica Neue", Arial, sans-serif;
     font-size: 14px;
     font-size: 1.4rem;
     margin-top: 20px; }
