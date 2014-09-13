@@ -20,12 +20,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin: 0 auto;
   float: none; }
 
-.form-control:not(select), .btn {
+.btn {
   border: none; }
 
 .form-control {
+  background-color: #eff1f4;
   box-shadow: none;
   border-color: #cbd4e6; }
+  .form-control:focus, .form-control:active {
+    background-color: #f5f6f8; }
 
 .btn {
   padding-top: 7px;
@@ -48,8 +51,19 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-left: 0; }
 
 select.form-control {
-  background-image: -webkit-linear-gradient(white 0, #eff1f4 75%);
+  background-image: -webkit-linear-gradient(#fff 0, #eff1f4 75%);
   background-image: linear-gradient(to   , #eff1f4 75%); }
+
+.parsley-error {
+  border-color: #d9534f; }
+.parsley-required, .parsley-custom-error-message, .parsley-type {
+  color: #d9534f;
+  font-size: 13px;
+  font-size: 1.3rem;
+  margin-top: 5px;
+  margin-bottom: 0; }
+.parsley-success {
+  border-color: #28b48e; }
 
 .table {
   border-top: 2px solid #29aae1; }
@@ -276,6 +290,8 @@ select.form-control {
     background-size: 230px 137px;
     right: 0;
     bottom: 0; }
+  .cheatsheet-signup .form-control {
+    border: none; }
 
 @media (min-width: 992px) {
   .cheatsheet-signup:after {

@@ -1,8 +1,8 @@
-.comparison-header {
+.comparison-header, .more-header {
   background: #81cce4 url(../img/comparison-header-bg.jpg) center top no-repeat;
   background-size: auto 100%;
   padding-top: 30px; }
-  .comparison-header-label {
+  .comparison-header-label, .more-header-more {
     font-weight: 700;
     color: #fff;
     background-color: #29aae1;
@@ -14,16 +14,16 @@
     font-size: 12px;
     font-size: 1.2rem;
     position: relative; }
-    .comparison-header-label:before, .comparison-header-label:after {
+    .comparison-header-label:before, .more-header-more:before, .comparison-header-label:after, .more-header-more:after {
       position: absolute;
       content: '';
       display: block; }
-    .comparison-header-label:before {
+    .comparison-header-label:before, .more-header-more:before {
       border: 3px solid;
       border-color: #1a8cbd #1a8cbd transparent transparent;
       left: 0;
       top: 100%; }
-    .comparison-header-label:after {
+    .comparison-header-label:after, .more-header-more:after {
       height: 100%;
       width: 6px;
       background: url(../img/comparison-header-label.svg) no-repeat top;
@@ -317,6 +317,32 @@
     .scorecard-best .scorecard-comment {
       background-color: #28b48e; }
 
+#modal {
+  display: none; }
+
+.more-wrapper {
+  background: #fff;
+  border-radius: 6px; }
+.more-header {
+  padding: 20px;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden; }
+  .more-header-title {
+    margin: 0;
+    clear: left;
+    font-family: "Amatic SC", cursive;
+    text-shadow: 2px 2px 0 rgba(255, 255, 255, 0.3);
+    background: url(../img/dotted-underline.png) bottom left repeat-x;
+    background-size: auto 4px;
+    display: inline-block;
+    float: left;
+    font-size: 36px;
+    font-size: 3.6rem;
+    padding-bottom: 5px; }
+.more-body {
+  padding: 20px;
+  overflow: hidden; }
+
 .important-container, .faq-container {
   margin: 20px -5px 0; }
 
@@ -345,7 +371,7 @@
     .important-block:hover h4, .faq-block:hover h4 {
       color: #29aae1; }
     .important-block:hover:after, .faq-block:hover:after {
-      border-color: #41596d white white #41596d; }
+      border-color: #41596d #fff #fff #41596d; }
   .important-block:after, .important-block:before, .faq-block:after, .faq-block:before {
     position: absolute;
     bottom: 0;
@@ -366,7 +392,7 @@
     margin-bottom: 0; }
 
 .important-block:after {
-  border-color: #ffe87a white white #ffe87a; }
+  border-color: #ffe87a #fff #fff #ffe87a; }
 
 .faq-block {
   background-color: #29aae1;
@@ -374,7 +400,7 @@
   .faq-block h4 {
     color: #fff; }
   .faq-block:after {
-    border-color: #1a8cbd white white #1a8cbd; }
+    border-color: #1a8cbd #fff #fff #1a8cbd; }
 
 @media (min-width: 1200px) {
   .column {
