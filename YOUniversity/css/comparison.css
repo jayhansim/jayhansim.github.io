@@ -342,6 +342,8 @@
 .more-body {
   padding: 20px;
   overflow: hidden; }
+.more-success {
+  display: none; }
 
 .important-container, .faq-container {
   margin: 20px -5px 0; }
