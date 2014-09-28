@@ -159,32 +159,32 @@
           <form action="" class="form-inline comparison-filters">
             <span class="comparison-filters-title">Refine search:</span>
             <!-- filter -->
-            <div class="form-group">
+            <!-- <div class="form-group">
               <select name="location" id="" class="form-control">
                 <option value="">All campus location</option>
                 <option value="">Kuala Lumpur</option>
                 <option value="">Petaling Jaya</option>
                 <option value="">Subang Jaya</option>
               </select>
-            </div>
+            </div> -->
 
             <!-- filter -->
-            <div class="form-group">
+            <!-- <div class="form-group">
               <select name="location" id="" class="form-control">
                 <option value="">All requirements</option>
                 <option value="">SPM</option>
                 <option value="">STPM</option>
                 <option value="">O Levels</option>
               </select>
-            </div>
+            </div> -->
 
             <!-- filter -->
             <div class="form-group">
-              <select name="location" id="" class="form-control">
-                <option value="">All Tuition Fees</option>
-                <option value="">Below RM15,000</option>
-                <option value="">RM15,001 - RM30,000</option>
-                <option value="">RM30,001 and above</option>
+              <select name="tuition-fee" id="tuition-fee" class="form-control" data-filter-column="2">
+                <option value="0">All Tuition Fees</option>
+                <option value="1">Below RM20,000</option>
+                <option value="2">RM20,001 - RM30,000</option>
+                <option value="3">RM30,001 and above</option>
               </select>
             </div>
           </form>
@@ -194,10 +194,9 @@
             <table class="table comparison-table">
               <thead>
                 <tr>
-                  <th>University</th>
-                  <th>Entry Requirements</th>
-                  <th>Ratings</th>
-                  <th>Tuition Fees</th>
+                  <th class="w-3">University</th>
+                  <th class="w-2">Entry Requirements</th>
+                  <th data-placeholder="Select a filter">Tuition Fees</th>
                   <th>Intake</th>
                   <th>Duration</th>
                   <th>More Info</th>
@@ -205,450 +204,234 @@
               </thead>
               <tbody>
 
-                <tr>
-                  <td>
-                    <img src="http://placehold.it/100x50" class="uni-logo" alt="">
-                    <div class="uni-info">
-                      <h3 class="h4 uni-info-title"><a href="#">KDU</a></h3>
-                      <span href="#" class="more-info uni-info-location">Location #1</span>
-                      <span href="#" class="more-info  uni-info-location">Location #2</span>
-                    </div>
-                  </td>
-                  <td>
-                    <h4 class="uni-credits-title">5 credits</h4>
-                    <span class="more-info">
-                      SPM, O-Levels or equivalent
-                    </span>
-                  </td>
-                  <td data-score="4.8">
-                    <div class="scorecard scorecard-best">
-                      <div class="scorecard-rating">
-                        ACE!
-                      </div>
-                      <h2 class="scorecard-score">
-                        4.8
-                      </h2>
-                      <div class="scorecard-expand">
-                        <div class="scorecard-content">
-                          <div class="scorecard-content-inner">
-                            <ul class="scorecard-list">
-                              <li>
-                                <div class="scorecard-list-criteria">Lecturers &amp; Courses</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Eat &amp; Drink</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Facilities</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star-half.png" alt="">
-                                  <img src="img/star-empty.png" alt="">
-                                  <span>3.5</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Clubs &amp; Societies</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Job Propects</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-
-                            </ul>
-                            <div class="scorecard-comment">
-                              (optional) Extra information of the card, or verdict, sign up gift, recommended etc.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td data-fee="30000">
-                    <h4 class="uni-fees-title">RM30,000</h4>
-                    <span class="more-info">3 subjects</span>
-                    <h4 class="uni-fees-title h5">RM50,000</h4>
-                    <span class="more-info">5 subjects</span>
-                  </td>
-                  <td>
-                    <h5>January <span class="label label-danger">Next</span></h5>
-                    <h5>March</h5>
-                    <h5>July</h5>
-                  </td>
-                  <td data-month="18">
-                    <h5>18 months</h5>
-                  </td>
-                  <td class="column-action">
-                    <a class="btn btn-success btn-moreinfo" href="#more">More Info</a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <img src="http://placehold.it/100x50" class="uni-logo" alt="">
-                    <div class="uni-info">
-                      <h3 class="h4 uni-info-title"><a href="#">Tar College</a></h3>
-                      <span href="#" class="more-info uni-info-location">Location #1</span>
-                      <span href="#" class="more-info  uni-info-location">Location #2</span>
-                    </div>
-                  </td>
-                  <td>
-                    <h4 class="uni-credits-title">6 credits</h4>
-                    <span class="more-info">
-                      SPM, O-Levels or equivalent
-                    </span>
-                  </td>
-                  <td data-score="4.5">
-                    <div class="scorecard scorecard-best">
-                      <div class="scorecard-rating">
-                        Best
-                      </div>
-                      <h2 class="scorecard-score">
-                        4.5
-                      </h2>
-                      <div class="scorecard-expand">
-                        <div class="scorecard-content">
-                          <div class="scorecard-content-inner">
-                            <ul class="scorecard-list">
-                              <li>
-                                <div class="scorecard-list-criteria">Lecturers &amp; Courses</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Eat &amp; Drink</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Facilities</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star-half.png" alt="">
-                                  <img src="img/star-empty.png" alt="">
-                                  <span>3.5</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Clubs &amp; Societies</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Job Propects</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-
-                            </ul>
-                            <div class="scorecard-comment">
-                              (optional) Extra information of the card, or verdict, sign up gift, recommended etc.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td data-fee="12000">
-                    <h4 class="uni-fees-title">RM12,000</h4>
-                    <span class="more-info">3 subjects</span>
-                    <h4 class="uni-fees-title h5">RM24,000</h4>
-                    <span class="more-info">5 subjects</span>
-                  </td>
-                  <td>
-                    <h5>January <span class="label label-danger">Next</span></h5>
-                    <h5>March</h5>
-                    <h5>July</h5>
-                  </td>
-                  <td data-month="20">
-                    <h5>20 months</h5>
-                  </td>
-                  <td class="column-action">
-                    <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <img src="http://placehold.it/100x50" class="uni-logo" alt="">
-                    <div class="uni-info">
-                      <h3 class="h4 uni-info-title"><a href="#">KBU</a></h3>
-                      <span href="#" class="more-info uni-info-location">Location #1</span>
-                      <span href="#" class="more-info  uni-info-location">Location #2</span>
-                    </div>
-                  </td>
-                  <td>
-                    <h4 class="uni-credits-title">5 credits</h4>
-                    <span class="more-info">
-                      SPM, O-Levels or equivalent
-                    </span>
-                  </td>
-                  <td data-score="3.3">
-                    <div class="scorecard">
-                      <div class="scorecard-rating">
-                        Good
-                      </div>
-                      <h2 class="scorecard-score">
-                        3.3
-                      </h2>
-                      <div class="scorecard-expand">
-                        <div class="scorecard-content">
-                          <div class="scorecard-content-inner">
-                            <ul class="scorecard-list">
-                              <li>
-                                <div class="scorecard-list-criteria">Lecturers &amp; Courses</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Eat &amp; Drink</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Facilities</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star-half.png" alt="">
-                                  <img src="img/star-empty.png" alt="">
-                                  <span>3.5</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Clubs &amp; Societies</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Job Propects</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-
-                            </ul>
-                            <div class="scorecard-comment">
-                              (optional) Extra information of the card, or verdict, sign up gift, recommended etc.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td data-fee="28000">
-                    <h4 class="uni-fees-title">RM28,000</h4>
-                    <span class="more-info">3 subjects</span>
-                    <h4 class="uni-fees-title h5">RM45,000</h4>
-                    <span class="more-info">5 subjects</span>
-                  </td>
-                  <td>
-                    <h5>January <span class="label label-danger">Next</span></h5>
-                    <h5>March</h5>
-                    <h5>July</h5>
-                  </td>
-                  <td data-month="15">
-                    <h5>15 months</h5>
-                  </td>
-                  <td class="column-action">
-                    <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
-                  </td>
-                </tr>
-
-                <tr>
-                  <td>
-                    <img src="http://placehold.it/100x50" class="uni-logo" alt="">
-                    <div class="uni-info">
-                      <h3 class="h4 uni-info-title"><a href="#">INTI College</a></h3>
-                      <span href="#" class="more-info uni-info-location">Location #1</span>
-                      <span href="#" class="more-info  uni-info-location">Location #2</span>
-                    </div>
-                  </td>
-                  <td>
-                    <h4 class="uni-credits-title">5 credits</h4>
-                    <span class="more-info">
-                      SPM, O-Levels or equivalent
-                    </span>
-                  </td>
-                  <td data-score="4.2">
-                    <div class="scorecard">
-                      <div class="scorecard-rating">
-                        Good
-                      </div>
-                      <h2 class="scorecard-score">
-                        4.2
-                      </h2>
-                      <div class="scorecard-expand">
-                        <div class="scorecard-content">
-                          <div class="scorecard-content-inner">
-                            <ul class="scorecard-list">
-                              <li>
-                                <div class="scorecard-list-criteria">Lecturers &amp; Courses</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Eat &amp; Drink</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Facilities</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star-half.png" alt="">
-                                  <img src="img/star-empty.png" alt="">
-                                  <span>3.5</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Clubs &amp; Societies</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-                              <li>
-                                <div class="scorecard-list-criteria">Job Propects</div>
-                                <div class="scorecard-star">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <img src="img/star.png" alt="">
-                                  <span>5.0</span>
-                                </div>
-                              </li>
-
-                            </ul>
-                            <div class="scorecard-comment">
-                              (optional) Extra information of the card, or verdict, sign up gift, recommended etc.
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </td>
-                  <td data-fee="42000">
-                    <h4 class="uni-fees-title">RM42,000</h4>
-                    <span class="more-info">3 subjects</span>
-                    <h4 class="uni-fees-title h5">RM55,000</h4>
-                    <span class="more-info">5 subjects</span>
-                  </td>
-                  <td>
-                    <h5>January <span class="label label-danger">Next</span></h5>
-                    <h5>March</h5>
-                    <h5>July</h5>
-                  </td>
-                  <td data-month="24">
-                    <h5>24 months</h5>
-                  </td>
-                  <td class="column-action">
-                    <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
-                  </td>
-                </tr>
-              </tbody>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/Taylors.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">Taylor's College</a></h3><br /><span href="#" class="more-info uni-info-location">Subang Jaya</span><br /><span href="#" class="more-info uni-info-location">Sri Hartamas</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="43040">
+                                      <h4 class="uni-fees-title">RM 43,040</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 34,123</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5><h5>July</h5></td><td><h5>18 Months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/Inti.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">INTI College</a></h3><br /><span href="#" class="more-info uni-info-location">Subang Jaya</span><br /><span href="#" class="more-info uni-info-location">Penang (Island)</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="31350">
+                                      <h4 class="uni-fees-title">RM 31,350</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 24,450</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5><h5>July</h5></td><td><h5>18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/SunwayCollege.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">Sunway College</a></h3><br /><span href="#" class="more-info uni-info-location">Johor Bahru</span><br /><span href="#" class="more-info uni-info-location">Bandar Sunway (PJ)</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="32560">
+                                      <h4 class="uni-fees-title">RM 42,560</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 32,000</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5><h5>July</h5></td><td><h5>18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/KDU.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">KDU University College</a></h3><br /><span href="#" class="more-info uni-info-location">Petaling Jaya (PJ)</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="40000">
+                                      <h4 class="uni-fees-title">RM 40,000</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 32,000</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5><h5>July</h5></td><td><h5>18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/Stamford.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">Stamford College</a></h3><br /><span href="#" class="more-info uni-info-location">Petaling Jaya (PJ)</span><br /><span href="#" class="more-info uni-info-location">Malacca</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="27000">
+                                      <h4 class="uni-fees-title">RM 27,000</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 23,000</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5><h5>July</h5></td><td><h5>15-18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/MCKL.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">Methodist College </a></h3><br /><span href="#" class="more-info uni-info-location">Kuala Lumpur</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="20500">
+                                      <h4 class="uni-fees-title">RM 20,500</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 18,700</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5><h5>July</h5></td><td><h5>18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/Disted.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">Disted College</a></h3><br /><span href="#" class="more-info uni-info-location">Penang</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="24005">
+                                      <h4 class="uni-fees-title">RM 24,005</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 19,035</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5><h5>June</h5></td><td><h5>12-18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/BAC.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">Brickfields Asia College</a></h3><br /><span href="#" class="more-info uni-info-location">Kuala Lumpur</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="22900">
+                                      <h4 class="uni-fees-title">RM 22,900</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 19,900</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>April</h5><h5>June</h5></td><td><h5>18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/UCSI.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">UCSI University</a></h3><br /><span href="#" class="more-info uni-info-location">Kuala Lumpur</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="33900">
+                                      <h4 class="uni-fees-title">RM 33,900</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 28,920</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5><h5>July</h5></td><td><h5>18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/LUX.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">LUX College</a></h3><br /><span href="#" class="more-info uni-info-location">Petaling Jaya</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="24000">
+                                      <h4 class="uni-fees-title">RM 24,000</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 22,000</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5><h5>July</h5></td><td><h5>18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/TERRA.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">Terra College</a></h3><br /><span href="#" class="more-info uni-info-location">Klang</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="15500">
+                                      <h4 class="uni-fees-title">RM 15,500</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 12,500</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>March</h5></td><td><h5>18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>
+                            <tr>
+                              <td>
+                                <img src="
+                                /images/logo/TARC.png" class="uni-logo" alt="">
+                                <div class="uni-info">
+                                  <h3 class="h4 uni-info-title"><a href="#">TAR University College</a></h3><br /><span href="#" class="more-info uni-info-location">Kuala Lumpur</span></div>
+                                </td><td>
+                                    <h4 class="uni-credits-title">5 credits</h4>
+                                    <span class="more-info">
+                                      SPM, O levels or equivalent
+                                    </span>
+                                  </td><td data-fee="16000">
+                                      <h4 class="uni-fees-title">RM 16,000</h4>
+                                      <span class="more-info">4 Subjects</span>
+                                      <h4 class="uni-fees-title">RM 12,400</h4>
+                                      <span class="more-info">3 Subjects</span></td><td><h5>January <span class="label label-danger">Next</span></h5><h5>May</h5></td><td><h5>18 months</h5></td><td class="column-action">
+                                  <a href="#more" class="btn btn-success btn-moreinfo">More Info</a>
+                                </td>
+                              </tr>              </tbody>
             </table>
           </div>
 
@@ -657,32 +440,40 @@
             <div class="more-wrapper">
               <div class="more-content">
                 <div class="more-header">
-                  <p class="more-header-more">Get more info about </p>
+                  <p class="more-header-more">Get More Info About:</p>
                   <h3 class="more-header-title"><span id="more-course-name">Cambridge A-Levels (CAL)</span> in <span id="more-school-name">Sunway College</span></h3>
                 </div>
                 <div class="more-body">
                   <div class="more-form">
-                    <p>Just leave your information below and we will get back to you with the details you need!</p>
-                    <form id="leadform" action="" class="form-horizontal" data-parsley-validate>
+                    <p>Thank you for your interest in this university. Just leave your information below and we'll get back yo you in 24 hours about any questions!</p>
+                    <form id="leadform" action="/php/sendmail.php" class="form-horizontal" data-parsley-validate>
                       <div class="form-group">
                         <label for="name" class="control-label col-sm-2">Name</label>
                         <div class="col-sm-8">
-                          <input class="form-control" type="text" name="name" id="name" placeholder="John Doe" required data-parsley-error-message="Oops, you forget to put your name here">
+                          <input class="form-control" type="text" name="name" id="name" placeholder="Hi, what's your name?" required data-parsley-error-message="Oops, you forget to put your name here">
                         </div>
                       </div>
                       <div class="form-group">
                         <label for="email" class="control-label col-sm-2">Email</label>
                         <div class="col-sm-8">
-                          <input class="form-control" type="email" name="email" id="email" placeholder="john@doe.com" required data-parsley-type-message="I don't think that's a valid email address" data-parsley-required-message="Please enter your email address">
+                          <input class="form-control" type="email" name="email" id="email" placeholder="e.g. nicole@youniversity.my" required data-parsley-type-message="I don't think that's a valid email address" data-parsley-required-message="Please enter your email address">
                         </div>
 
                       </div>
                       <div class="form-group">
-                        <label for="phonr" class="control-label col-sm-2">Phone Number</label>
+                        <label for="phone" class="control-label col-sm-2">Phone Number</label>
                         <div class="col-sm-8">
-                          <input class="form-control" type="tel" name="phone" id="phone" placeholder="0123456789" required data-parsley-type="number" data-parsley-type-message="Please insert a valid phone number (no dash)" data-parsley-required-message="Please enter your phone number">
+                          <input class="form-control" type="tel" name="phone" id="phone" placeholder="e.g. 0123456789" required data-parsley-type="number" data-parsley-type-message="Please insert a valid phone number (no dash)" data-parsley-required-message="Please enter your phone number">
                         </div>
                       </div>
+                      <div class="form-group">
+                        <label for="questions" class="control-label col-sm-2">Questions <span id="charLimit" class="char-limit">250 characters left</span></label>
+                        <div class="col-sm-8">
+                          <textarea placeholder="Do you have any questions to ask?" name="questions" id="questions" rows="5" class="form-control" data-parsley-maxlength="250" data-parsley-validation-threshold="10" data-parsley-maxlength-message="You have exceeded the character length" data-parsley-trigger="keyup" ></textarea>
+                        </div>
+                      </div>
+                      <input type="text" hidden id="courseName" name="courseName">
+                      <input type="text" hidden id="schoolName" name="schoolName">
                       <div class="form-group">
                         <div class="col-sm-offset-2 col-sm-10">
                           <button id="btn-submit" type="submit" class="btn btn-success">Submit</button>
@@ -777,15 +568,16 @@
 
         <div class="row">
           <div class="col-sm-6 col-centered col-xs-12">
-            <div class="input-group input-group-lg input-cheatsheet-signup">
-              <input type="text" class="form-control" required placeholder="Your email address">
-              <span class="input-group-btn">
-                <button class="btn btn-default" type="button">Subscribe</button>
-              </span>
-            </div><!-- /input-group -->
+            <form id="newsletterSignUp" action="">
+              <div class="input-group input-group-lg input-cheatsheet-signup">
+                <input id="newsletterName" name="newsletterName" type="text" class="form-control" required placeholder="Your email address">
+                <span class="input-group-btn">
+                  <button id="btn-newsletterSubmit" class="btn btn-default" type="submit">Subscribe</button>
+                </span>
+              </div><!-- /input-group -->
+            </form>
           </div>
         </div>
-
       </div>
     </div>
   </div>

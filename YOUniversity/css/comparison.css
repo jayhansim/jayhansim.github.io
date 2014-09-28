@@ -129,34 +129,39 @@
     padding-left: 20px;
     box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1); }
 
-.comparison-table thead > tr > th {
-  padding-top: 30px;
-  padding-bottom: 30px;
-  text-align: center; }
-.comparison-table tbody > tr:hover td {
-  background: #f8f9fa; }
-.comparison-table tbody > tr:hover .column-action {
-  background: #eff1f4; }
-.comparison-table tbody > tr td {
-  border-top: none;
-  border-bottom: 1px solid #dce2ee;
-  vertical-align: middle;
-  padding-top: 15px;
-  padding-bottom: 15px;
-  text-align: center;
-  -webkit-transition: 0.1s background-color linear;
-  -moz-transition: 0.1s background-color linear;
-  transition: 0.1s background-color linear; }
-  .comparison-table tbody > tr td:first-child {
-    text-align: left;
-    width: 20%; }
-  .comparison-table tbody > tr td:nth-child(2) {
-    width: 18%; }
-.comparison-table .column-action {
-  background: #f8f9fa;
-  vertical-align: middle; }
-.comparison-table h5 {
-  font-weight: 400; }
+table.tablesorter .tablesorter-filter, .tablesorter-filter-row {
+  display: none !important; }
+
+.comparison-table {
+  table-layout: fixed; }
+  .comparison-table thead > tr > th {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center; }
+  .comparison-table tbody > tr:hover td {
+    background: #f8f9fa; }
+  .comparison-table tbody > tr:hover .column-action {
+    background: #eff1f4; }
+  .comparison-table tbody > tr td {
+    border-top: none;
+    border-bottom: 1px solid #dce2ee;
+    vertical-align: middle;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    -webkit-transition: 0.1s background-color linear;
+    -moz-transition: 0.1s background-color linear;
+    transition: 0.1s background-color linear; }
+    .comparison-table tbody > tr td:first-child {
+      text-align: left;
+      width: 20%; }
+    .comparison-table tbody > tr td:nth-child(2) {
+      width: 18%; }
+  .comparison-table .column-action {
+    background: #f8f9fa;
+    vertical-align: middle; }
+  .comparison-table h5 {
+    font-weight: 400; }
 
 .more-info {
   color: #6a717f;
