@@ -1,0 +1,354 @@
+<!doctype html>
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="initial-scale=1.0, width=device-width">
+
+		<title> iMoney Credit Card SmartSearch </title>
+		
+	
+	
+		<link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="/css/bootstrap.css">
+		<link rel="stylesheet" href="/css/base.css">
+		
+	<link rel="stylesheet" type="text/css" href="/css/cc-smartsearch.css">
+	<link rel="stylesheet" type="text/css" href="../js/slick/slick.css"/>
+	
+
+		
+		<script src="/js/modernizr.custom.min.js"></script>
+		<!--[if lt IE 9]>
+		<script src="/js/plugins/respond.min.js"></script>
+		<![endif]-->
+		
+
+	</head>
+	<body>
+		
+
+	<div class="modal fade PreferToTalk" tabindex="-1" role="dialog" aria-labelledby="Prefer to talk" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<div class="wrapper">
+					<h1>Wait!</h1>
+					<p>We can really help you to choose the best card for you, and it's FREE! Let us call you back.</p>
+					<form>
+						<input class="form-control icn_name" type="text" name="name" placeholder="Your Name" />
+						<input class="form-control icn_tel" type="tel" name="phone" placeholder="Contact Number" />
+						<button class="btn btn-show">Yes, please call me back</button><br>
+						<a href="#">Skip this, I want to do my own research.</a>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<header class="cc-smartsearch-header">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-sm-2 hidden-xs">
+					<a href="#" class="imoney-logo">
+						iMoney.my
+					</a>
+				</div>
+				<div class="col-md-5 col-md-offset-3 col-sm-6 col-sm-offset-2 col-xs-9">
+					<div class="smartsearch-logo">
+						Credit Card SmartSearch
+					</div>
+				</div>
+				<div class="col-sm-2 col-xs-3">
+					<div class="text-right">
+						<a data-toggle="modal" href="#" data-target=".PreferToTalk" class="seeAllCards">See all 140 cards</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="ss-progressbar"></div>
+	<section class="ss-header">
+		<h1 class="text-center">We just need a few more details to find a great card for you.</h1>
+	</section>
+	<div class="ss-container row">
+		<div class="smartsearch-indicator">
+			<ul>
+				<li><span class="icn_spending"></span></li>
+				<li><span class="icn_reward"></span></li>
+				<li><span class="icn_balance"></span></li>
+				<li><span class="icn_salary"></span></li>
+			</ul>
+		</div>
+		<div class="smartsearch">
+		  <div>
+		  	<h1>
+		  		<span class="slideNumber">1</span> What do you spend on most every month?
+					<a href="#" class="tooltip"><img src="/cc-smartsearch/img/icn_info.png" width="20">
+						<span>
+							Many credit card providers focus on specific benefits. By knowing what you spend on, we can help you find the card that best suits your spending habits.
+						</span>
+					</a>
+		  	</h1>
+		  	<div class="smartsearch-content">
+			  	<div class="form-group">
+            <p>Please select 2 categories.</p>
+				  	<ul class="btns-spending">
+				  		<li>
+				  			<input type="checkbox" name="spending" id="petrol" value="petrol"/>
+				  			<label for="petrol" class="icn_petrol"><p>Petrol</p></label>
+				  		</li>
+				  		<li>
+				  			<input type="checkbox" name="spending" id="groceries" value="groceries" />
+				  			<label for="groceries" class="icn_groceries"><p>Groceries</p></label>
+				  		</li>
+				  		<li>
+				  			<input type="checkbox" name="spending" id="shopping" value="shopping" />
+				  			<label for="shopping" class="icn_shopping"><p>Shopping</p></label>
+				  		</li>
+				  		<li>
+				  			<input type="checkbox" name="spending" id="dining" value="dining" />
+				  			<label for="dining" class="icn_dining"><p>Dining</p></label>
+				  		</li>
+				  		<li>
+				  			<input type="checkbox" name="spending" id="utility" value="utility" />
+				  			<label for="utility" class="icn_utility"><p>Utility Bills</p></label>
+				  		</li>
+				  	</ul>
+				  </div>
+			  </div>
+		  </div>
+		  <div>
+		  	<h1><span class="slideNumber">2</span> How would you like your credit card to reward you?</h1>
+		  	<div class="smartsearch-content" style="padding-bottom: 0px;">
+		  		<div class="form-group">
+				  	<ul class="btns-rewards">
+				  		<li>
+				  			<input type="radio" name="reward" id="cashback" value="cashback"/>
+				  			<label for="cashback" class="icn_cashback">Cashback</label>
+				  			<p>Get cash rebates every month</p>
+				  		</li>
+				  		<li>
+				  			<input type="radio" name="reward" id="reward-points" value="reward-points" />
+				  			<label for="reward-points" class="icn_rewardpoints">Reward Points</label>
+				  			<p>Earn points that can be redeemed for gifts or purchases</p>
+				  		</li>
+				  		<li>
+				  			<input type="radio" name="reward" id="travel-rewards" value="travel-rewards" />
+				  			<label for="travel-rewards" class="icn_travelrewards">Travel Rewards</label>
+				  			<p>Earn frequent flyer miles and redeem for free flights.
+	Recommended for jetsetters.</p>
+				  		</li>
+				  	</ul>
+				  </div>
+		  	</div>
+		  </div>
+		  <div>
+		  	<h1><span class="slideNumber">3</span> Do you have another credit card?
+		  		<a href="#" class="tooltip"><img src="/cc-smartsearch/img/icn_info.png" width="20">
+						<span>
+							Some cards offer 0% or low interest on your balance transfer amount.
+						</span>
+					</a>
+		  	</h1>
+		  	<div class="smartsearch-content">
+			  	<ul class="btns-radio">
+						<li>
+							<input type="radio" id="existingCC-yes" value="Yes" name="ExistingCC" />
+							<label for="existingCC-yes">Yes</label>
+						</li>
+						<li>
+							<input type="radio" id="existingCC-no" value="No" name="ExistingCC" />
+							<label for="existingCC-no">No</label>
+						</li>
+					</ul>
+					<br><br>
+					<div class="hiddenQuestion">
+						<hr>
+						<p>Do you want to transfer that balance onto your new card?</p>
+						<ul class="btns-radio balancetrnx">
+							<li>
+								<input type="radio" id="balancetrnx-yes" value="Yes" name="BalanceTrnx" />
+								<label for="balancetrnx-yes">Yes</label>
+							</li>
+							<li>
+								<input type="radio" id="balancetrnx-no" value="No" name="BalanceTrnx" />
+								<label for="balancetrnx-no">No</label>
+							</li>
+						</ul>
+					</div>
+				</div>
+		  </div>
+		  <div>
+		  	<h1><span class="slideNumber">4</span> What is your estimated monthly salary?
+		  		<a href="#" class="tooltip"><img src="/cc-smartsearch/img/icn_info.png" width="20">
+						<span>
+							Many credit cards require a minimum monthly income.
+						</span>
+					</a>
+		  	</h1>
+		  	<div class="smartsearch-content">
+		  		<div class="btns-radio">
+		  			<ul class="salary">
+							<li>
+								<input type="radio" name="salary" id="<2000" value="<2000"/>
+								<label for="<2000">&#8804; RM2000</label>
+							</li>
+				  	</ul>
+				  	<ul class="salary mid">
+				  		<li>
+				  			<input type="radio" name="salary" id="RM2001-2500" value="RM2001-2500" />
+				  			<label for="RM2001-2500">RM2001 - RM2500</label>
+				  		</li>
+				  		<li>
+				  			<input type="radio" name="salary" id="RM2501-3000" value="RM2501-3000" />
+				  			<label for="RM2501-3000">RM2501 - RM3000</label>
+				  		</li>
+				  		<li>
+				  			<input type="radio" name="salary" id="RM3001-5000" value="RM3001-5000" />
+				  			<label for="RM3001-5000">RM3000 - RM5000</label>
+				  		</li>
+				  		<li>
+				  			<input type="radio" name="salary" id="RM5001-8500" value="RM5001-8500" />
+				  			<label for="RM5001-8500">RM5001 - RM8500</label>
+				  		</li>
+				  		<li>
+				  			<input type="radio" name="salary" id="RM8501-10000" value="RM3001-5000" />
+				  			<label for="RM8501-10000">RM8501 - RM10000</label>
+				  		</li>
+				  	</ul>
+				  	<ul class="salary">
+				  		<li>
+				  			<input type="radio" name="salary" id=">10000" value="RM5001-8500" />
+				  			<label for=">10000">&#8805; RM10000</label>
+				  		</li>
+				  	</ul>
+				  </div>
+				</div>
+			</div>
+			<div>
+		  	<h1><span class="slideNumber">5</span> Your details</h1>
+		  	<div class="smartsearch-content capture">
+		  		<div class="container-fluid">
+						<div class="col-xs-9">
+				  		<p>To help us provide you with a recommendation, please enter your contact details. We will display your comparison on the next page.</p>
+				  		<input class="form-control icn_name" type="text" name="name" placeholder="Your Name" />
+				  		<input class="form-control icn_email" type="email" name="email" placeholder="Email" />
+				  		<input class="form-control icn_tel" type="tel" name="phone" placeholder="Contact Number" />
+				  		<button class="btn btn-show">Show my recommended cards</button>
+				  	</div>
+				  </div>
+		  	</div>
+		  </div>
+		</div>
+	</div>
+	<div class="smartsearch-footer container text-center">
+		<p>
+			<strong>Why are we asking you these questions?</strong><br>
+			<small>In order to provide you the best results, we need to ask you a few questions.</small>
+		</p>
+		<button type="button" class="btn-line" data-toggle="modal" data-target=".PreferToTalk">Prefer to talk?</button>
+		<p><small>Please call</small> <strong>03-2106 5434</strong><small> or </small>
+		<a data-toggle="modal" href="#" data-target=".PreferToTalk"><strong>let us call you</strong></a>.</p>
+	</div>
+
+
+		
+
+	
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="../js/slick/slick.min.js"></script>
+	<script type="text/javascript">
+			//slick
+			var slideQuestions = $('.smartsearch'),
+				slideProgressBar = $('.ss-progressbar'),
+				slideIndicator = $('.smartsearch-indicator ul'),
+				slideButtons = $('.smartsearch-indicator span'),
+				totalSlides;
+
+			$(slideQuestions).slick({
+			  infinite: false,
+			  arrows: false,
+			  speed: 300,
+			  adaptiveHeight: true,
+			  slidesToShow: 1,
+			  onAfterChange:function(slider, i){
+					//remove all active class
+					$(slideButtons).removeClass('icn_highlight');
+					$(slideButtons).parent('li').removeClass('icn_highlight_done');
+					$(slideButtons).css('opacity', '1');
+					//set active class for current slide
+					$(slideButtons).eq(i).addClass('icn_highlight');
+
+					for(var num = i-1; num >= 0; num--) {
+						$(slideButtons).eq(num).addClass('icn_highlight').css('opacity', '0.2');
+						$(slideButtons).eq(num).parent('li').addClass('icn_highlight_done');
+					}
+					
+					//progress bar
+					var currentSlide = slideQuestions.slickCurrentSlide() + 1;
+					if($(slideQuestions).length === 0 ) {
+						slideProgressBar.width('100%');
+					} else {
+						slideProgressBar.width(currentSlide/totalSlides * 100 + '%');
+					}        
+				},
+				onInit: function(){
+					totalSlides = $('.slick-slide').length - $('.slick-cloned').length;
+					slideProgressBar.width(1/totalSlides * 100 + '%');
+
+					// to re-select first buttons on first slide
+					// $('.btns-spending li:first-child > label').click();
+				}
+			});
+
+			// icon indicator
+			$(slideIndicator).slick({
+				slide: 'li',
+				asNavFor: '.smartsearch',
+				slidesToShow: 4,
+				slidesToScroll: 1,
+				dots: true,
+				focusOnSelect: true
+			});
+
+			// set active class to first slide to indicator
+			$(slideButtons).eq(0).addClass('icn_highlight');
+
+			// go to next slide after select an answer
+			$('.btns-spending input, .btns-rewards input, .salary input, .balancetrnx input, #existingCC-no').on('click', function(){					
+				$(slideQuestions).delay(500).queue(function(next){
+					$(slideQuestions).slickNext();
+					next();
+				});
+			});
+
+			// slide down more question if already a credit card user
+			$(".hiddenQuestion").css('opacity','0');
+
+			$("input[name=ExistingCC]").on('change', function(){ 
+				if($('#existingCC-yes').prop('checked', true)){
+					$(".hiddenQuestion").css('opacity','1');
+				}
+				else{
+					$(".hiddenQuestion").css('opacity','0');
+				}
+				// $(".hiddenQuestion")[this.id=='existingCC-yes'?'slideDown':'slideUp']();
+			});
+
+			var mq = window.matchMedia('all and (max-width: 768px)');
+			if(mq.matches) {
+				$('.seeAllCards').text("Skip");
+			} else {
+				$('.seeAllCards').text("See all 140 cards");
+			}
+
+	</script>
+
+
+	</body>
+</html>

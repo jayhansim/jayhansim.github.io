@@ -1,0 +1,660 @@
+/* base font color */
+/* #5e6a77 lighter font color */
+/* color for darkblue section */
+html, body {
+  background-color: #B0D5E9; }
+
+.cc-smartsearch-header {
+  padding: 10px 20px 10px 20px;
+  background-color: #ffffff;
+  position: relative; }
+  .cc-smartsearch-header .smartsearch-logo {
+    margin: 0 auto;
+    color: #2F7FBA;
+    font-size: 20px;
+    font-size: 2rem;
+    font-weight: 200;
+    padding-left: 53px;
+    background: url(../img/ss-icon@2x.png) no-repeat 0 0;
+    background-size: 49px 29px; }
+
+.imoney-logo {
+  background: url(../img/imoney-malaysia-logo.svg) no-repeat;
+  display: inline-block;
+  width: 180px;
+  height: 25px;
+  text-indent: -1000em;
+  background-size: 130px 25px; }
+
+.no-svg .imoney-logo {
+  background: url(../img/imoney-malaysia-logo.png) no-repeat; }
+
+.ss-header {
+  padding-top: 20px;
+  padding-bottom: 30px; }
+  .ss-header h1 {
+    font-size: 28px;
+    font-size: 2.8rem;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #1F4D6E;
+    font-weight: 600; }
+
+.ss-container {
+  width: 710px;
+  margin: 0 auto; }
+
+.smartsearch {
+  width: 600px;
+  float: left;
+  background-color: white;
+  color: #859297;
+  padding: 0;
+  -webkit-box-shadow: 3px 4px 0 0 rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 4px 0 0 rgba(0, 0, 0, 0.15); }
+  .smartsearch h1 {
+    font-size: 20px;
+    color: #323232;
+    padding: 30px;
+    margin: 0px;
+    position: relative;
+    border-bottom: solid 1px #ddd; }
+  .smartsearch .smartsearch-content {
+    padding: 30px; }
+    .smartsearch .smartsearch-content.capture {
+      background: url(../cc-smartsearch/img/img_girl.png) no-repeat bottom right;
+      background-size: 200px auto; }
+      .smartsearch .smartsearch-content.capture div[class^="col-"] {
+        padding: 0px; }
+      .smartsearch .smartsearch-content.capture p {
+        margin-bottom: 25px; }
+      .smartsearch .smartsearch-content.capture button {
+        margin-top: 10px;
+        margin-bottom: 24px; }
+  .smartsearch .slideNumber {
+    width: 35px;
+    height: 35px;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 4px;
+    margin-right: 5px;
+    border: solid 2px #DCE5E8;
+    color: #6E8F98;
+    border-radius: 50%; }
+  .smartsearch.slick-slider {
+    margin-bottom: 0px; }
+
+.smartsearch-indicator {
+  width: 110px;
+  float: left;
+  background-color: #33709C;
+  margin-top: 10px;
+  padding: 0px; }
+  .smartsearch-indicator ul.slick-slider {
+    position: static;
+    list-style: none;
+    margin: 0px;
+    padding: 0px; }
+    .smartsearch-indicator ul.slick-slider li.slick-slide {
+      display: table-cell;
+      position: relative;
+      width: 100px !important;
+      height: 100px;
+      margin: 0px;
+      padding: 25px 23px; }
+  .smartsearch-indicator .icn_spending, .smartsearch-indicator .icn_reward, .smartsearch-indicator .icn_balance, .smartsearch-indicator .icn_salary {
+    width: 55px;
+    height: 50px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    background: url(../cc-smartsearch/img/icn_indicator.png) no-repeat;
+    background-size: 163px auto; }
+  .smartsearch-indicator .icn_spending {
+    background-position: 5px 0px; }
+    .smartsearch-indicator .icn_spending.icn_highlight {
+      background-position: -105px 0px; }
+  .smartsearch-indicator .icn_reward {
+    background-position: 0px -110px; }
+    .smartsearch-indicator .icn_reward.icn_highlight {
+      background-position: -108px -110px; }
+  .smartsearch-indicator .icn_balance {
+    background-position: 0px -220px; }
+    .smartsearch-indicator .icn_balance.icn_highlight {
+      background-position: -110px -220px; }
+  .smartsearch-indicator .icn_salary {
+    background-position: 0px -330px; }
+    .smartsearch-indicator .icn_salary.icn_highlight {
+      background-position: -110px -330px; }
+  .smartsearch-indicator .icn_spending:after, .smartsearch-indicator .icn_reward:after, .smartsearch-indicator .icn_balance:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 7px;
+    height: 34px;
+    background: url(../cc-smartsearch/img/icn_indicator_arrow.png) no-repeat;
+    background-size: 6px auto;
+    top: 60px;
+    left: 25px; }
+  .smartsearch-indicator .icn_highlight {
+    -webkit-animation-name: fadingIn;
+    -webkit-animation-duration: 0.3s;
+    -webkit-animation-timing-function: linear; }
+@-webkit-keyframes fadingIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+  .smartsearch-indicator .icn_highlight_done:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 20px;
+    height: 16px;
+    background: url(../cc-smartsearch/img/tick_white.png) no-repeat;
+    background-size: 20px auto;
+    top: 43px;
+    left: 40px; }
+
+.smartsearch-footer {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #4788B6;
+  padding: 30px 20px 20px 20px; }
+  .smartsearch-footer strong {
+    color: #3E789B; }
+  .smartsearch-footer .btn-line {
+    background-color: transparent;
+    padding: 5px 15px;
+    margin-bottom: 10px;
+    border: solid 1px #3F80AE;
+    border-radius: 15px; }
+
+.ss-progressbar {
+  background-color: #3E73B6;
+  height: 6px;
+  -webkit-transition: width 800ms ease-out;
+  -moz-transition: width 800ms ease-out;
+  transition: width 800ms ease-out; }
+
+.btns-spending, .btns-rewards, .btns-radio {
+  list-style-position: inside;
+  overflow: hidden; }
+
+.btns-spending li:nth-child(3) {
+  margin-right: 0px; }
+.btns-spending li:nth-child(4) {
+  margin-left: 50px; }
+
+.btns-spending li, .btns-rewards li, .btns-radio li {
+  width: 100px;
+  height: 110px;
+  float: left;
+  display: inline-block;
+  position: relative;
+  margin-right: 50px;
+  margin-bottom: 10px;
+  padding: 0; }
+  .btns-spending li label, .btns-spending li input, .btns-rewards li label, .btns-rewards li input, .btns-radio li label, .btns-radio li input {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+  .btns-spending li input[type="checkbox"],
+  .btns-spending li input[type="radio"], .btns-rewards li input[type="checkbox"],
+  .btns-rewards li input[type="radio"], .btns-radio li input[type="checkbox"],
+  .btns-radio li input[type="radio"] {
+    opacity: 0.011;
+    z-index: 100; }
+  .btns-spending li input[type="checkbox"]:checked + label,
+  .btns-spending li input[type="radio"]:checked + label, .btns-rewards li input[type="checkbox"]:checked + label,
+  .btns-rewards li input[type="radio"]:checked + label, .btns-radio li input[type="checkbox"]:checked + label,
+  .btns-radio li input[type="radio"]:checked + label {
+    background-color: #FC8F51;
+    border: solid 1px #FC8F51; }
+    .btns-spending li input[type="checkbox"]:checked + label p,
+    .btns-spending li input[type="radio"]:checked + label p, .btns-rewards li input[type="checkbox"]:checked + label p,
+    .btns-rewards li input[type="radio"]:checked + label p, .btns-radio li input[type="checkbox"]:checked + label p,
+    .btns-radio li input[type="radio"]:checked + label p {
+      color: #323232; }
+  .btns-spending li label, .btns-rewards li label, .btns-radio li label {
+    text-align: center;
+    cursor: pointer;
+    z-index: 90;
+    padding-top: 75px;
+    background-color: #E8EAEB;
+    position: relative;
+    font-size: 14px;
+    font-size: 1.4rem;
+    font-weight: 400;
+    border: solid 1px #E8EAEB;
+    border-radius: 3px;
+    -webkit-transition: all 200ms linear;
+    -moz-transition: all 200ms linear;
+    transition: all 200ms linear; }
+    .btns-spending li label:hover, .btns-rewards li label:hover, .btns-radio li label:hover {
+      background-color: #D7DDE0; }
+    .btns-spending li label p, .btns-rewards li label p, .btns-radio li label p {
+      border-radius: 0 0 3px 3px;
+      background-color: #fff;
+      padding: 5px 0;
+      margin-bottom: 0px; }
+
+.icn_petrol:before, .icn_groceries:before, .icn_shopping:before, .icn_dining:before, .icn_utility:before {
+  width: 33px;
+  height: 33px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 25px;
+  left: 35px;
+  background: url(../cc-smartsearch/img/icn_spending.png) no-repeat;
+  background-size: 66px auto; }
+
+.icn_petrol:before {
+  background-position: 0px 0px; }
+
+.icn_groceries:before {
+  background-position: 0px -33px; }
+
+.icn_shopping:before {
+  background-position: 0px -66px; }
+
+.icn_dining:before {
+  background-position: 0px -99px; }
+
+.icn_utility:before {
+  background-position: 0px -132px; }
+
+input[type="checkbox"]:checked + label.icn_petrol:before {
+  background-position: -33px 0px; }
+
+input[type="checkbox"]:checked + label.icn_groceries:before {
+  background-position: -33px -33px; }
+
+input[type="checkbox"]:checked + label.icn_shopping:before {
+  background-position: -33px -66px; }
+
+input[type="checkbox"]:checked + label.icn_dining:before {
+  background-position: -33px -99px; }
+
+input[type="checkbox"]:checked + label.icn_utility:before {
+  background-position: -33px -132px; }
+
+.icn_petrol:after,
+.icn_groceries:after,
+.icn_shopping:after,
+.icn_dining:after,
+.icn_utility:after,
+.icn_cashback:after,
+.icn_rewardpoints:after,
+.icn_travelrewards:after,
+.btns-radio label:before {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #fff;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 3px;
+  right: 3px; }
+
+input[type="checkbox"]:checked + label:after,
+input[type="radio"]:checked + label:after,
+.btns-radio input[type="radio"]:checked + label:before {
+  background: #fff url(../cc-smartsearch/img/tick_orange.png) no-repeat 5px 5px;
+  background-size: 10px auto; }
+
+.btns-rewards li {
+  width: 120px;
+  height: 230px;
+  margin-right: 30px; }
+  .btns-rewards li label {
+    background-color: transparent;
+    border: none;
+    padding-top: 39px;
+    margin: 0 auto;
+    transition: none; }
+    .btns-rewards li label:hover {
+      background-color: transparent; }
+  .btns-rewards li input[type="radio"]:checked + label {
+    background-color: transparent;
+    border: none;
+    color: #323232; }
+  .btns-rewards li p {
+    font-size: 12px;
+    font-size: 1.2rem;
+    text-align: center;
+    border-top: solid 1px #ddd;
+    margin-top: 20px;
+    padding-top: 10px; }
+
+.icn_cashback, .icn_rewardpoints, .icn_travelrewards {
+  width: 100px;
+  height: 120px;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background: url(../cc-smartsearch/img/icn_rewards.png) no-repeat;
+  background-size: 100px auto; }
+
+input[type="radio"]:checked + label.icn_cashback {
+  background-position: 0px -120px; }
+
+input[type="radio"]:checked + label.icn_rewardpoints {
+  background-position: 0px -240px; }
+
+input[type="radio"]:checked + label.icn_travelrewards {
+  background-position: 0px -360px; }
+
+.icn_cashback:after,
+.icn_rewardpoints:after,
+.icn_travelrewards:after {
+  top: auto;
+  bottom: 3px;
+  right: 5px; }
+
+.btns-radio li {
+  width: auto;
+  min-width: 100px;
+  height: 40px;
+  margin-right: 1px; }
+  .btns-radio li:first-child label {
+    border-radius: 3px 0 0 3px; }
+  .btns-radio li:last-child label {
+    border-radius: 0 3px 3px 0; }
+  .btns-radio li label {
+    text-align: left;
+    border-radius: 0px;
+    padding: 10px 10px 10px 40px; }
+    .btns-radio li label:before {
+      right: auto;
+      top: 10px;
+      left: 10px; }
+  .btns-radio li input[type="radio"]:checked + label {
+    color: #fff; }
+
+.btns-radio .salary {
+  width: 130px;
+  float: left;
+  list-style-position: inside;
+  overflow: hidden;
+  padding-left: 0px; }
+  .btns-radio .salary li label {
+    border-radius: 3px; }
+  .btns-radio .salary li:first-child label {
+    border-radius: 3px; }
+  .btns-radio .salary li:last-child label {
+    border-radius: 3px; }
+
+.btns-radio .salary.mid {
+  width: 200px; }
+
+.btns-radio .salary.mid li {
+  width: 190px; }
+
+input[type="text"],
+input[type="tel"],
+input[type="email"] {
+  width: 280px;
+  border: solid 1px #ddd;
+  box-shadow: none;
+  margin-bottom: 10px;
+  position: relative; }
+
+.icn_name::-webkit-input-placeholder,
+.icn_email::-webkit-input-placeholder,
+.icn_tel::-webkit-input-placeholder {
+  color: #ddd; }
+
+.icn_name:-moz-placeholder,
+.icn_email:-moz-placeholder,
+.icn_tel:-moz-placeholder {
+  color: #eee; }
+
+.icn_name::-moz-placeholder,
+.icn_email::-moz-placeholder,
+.icn_tel::-moz-placeholder {
+  color: #eee; }
+
+.icn_name:-ms-input-placeholder,
+.icn_email:-ms-input-placeholder,
+.icn_tel:-ms-input-placeholder {
+  color: #eee; }
+
+.icn_name, .icn_email, .icn_tel {
+  background: url(../cc-smartsearch/img/icn_form.png) no-repeat;
+  background-size: 24px auto;
+  padding-left: 40px; }
+
+.icn_name {
+  background-position: 7px 4px; }
+
+.icn_email {
+  background-position: 7px -46px; }
+
+.icn_tel {
+  background-position: 7px -94px; }
+
+.btn-show {
+  background-color: #85E5B0;
+  border: solid 2px #489068;
+  box-shadow: none;
+  font-size: 15px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #508166;
+  -webkit-transition: background 300ms ease-out;
+  -moz-transition: background 300ms ease-out;
+  transition: background 300ms ease-out; }
+  .btn-show:hover, .btn-show:focus, .btn-show:active {
+    background-color: #3EA66C;
+    border: solid 2px #3EA66C;
+    color: #fff;
+    outline: 0; }
+
+a.tooltip {
+  outline: none;
+  opacity: 1;
+  display: inline-block;
+  position: absolute;
+  top: 35px;
+  right: 20px; }
+  a.tooltip strong {
+    line-height: 30px; }
+  a.tooltip:hover {
+    text-decoration: none; }
+  a.tooltip span {
+    z-index: 10;
+    display: none;
+    padding: 12px 15px;
+    margin-top: 10px;
+    width: 232px;
+    right: 0px; }
+  a.tooltip:hover span {
+    display: inline;
+    position: absolute;
+    z-index: 1000;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background-color: #fff;
+    color: #859297; }
+
+.PreferToTalk .modal-dialog {
+  width: 670px; }
+.PreferToTalk .modal-content {
+  background: #fff url(../cc-smartsearch/img/img_man.png) no-repeat;
+  background-position: 50px 30px;
+  background-size: 40% auto;
+  padding: 15px; }
+  .PreferToTalk .modal-content .wrapper {
+    padding: 25px; }
+  .PreferToTalk .modal-content .close {
+    line-height: 0.6; }
+.PreferToTalk .modal-backdrop {
+  background-color: #fff; }
+  .PreferToTalk .modal-backdrop.in {
+    opacity: 0.8; }
+.PreferToTalk h1 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: #F0703B;
+  margin-top: 0px; }
+.PreferToTalk p {
+  margin-left: 230px;
+  margin-bottom: 15px; }
+.PreferToTalk form {
+  margin-left: 300px; }
+  .PreferToTalk form input {
+    width: 280px;
+    height: 40px; }
+  .PreferToTalk form .icn_name {
+    background-position: 7px 7px; }
+  .PreferToTalk form .icn_tel {
+    background-position: 7px -91px;
+    margin-bottom: 15px; }
+  .PreferToTalk form .btn-show {
+    margin-bottom: 15px; }
+  .PreferToTalk form a {
+    font-size: 12px;
+    font-size: 1.2rem; }
+
+@media (max-width: 768px) {
+  html, body {
+    background-color: #ffffff; }
+
+  p {
+    text-align: center; }
+
+  .cc-smartsearch-header {
+    background-color: #56BCF1;
+    color: #ffffff; }
+    .cc-smartsearch-header .smartsearch-logo {
+      color: #ffffff;
+      background-image: url(../img/ss-icon-white@2x.png);
+      background-size: 34px 22px;
+      padding-left: 40px;
+      font-size: 16px;
+      font-size: 1.6rem; }
+    .cc-smartsearch-header a {
+      color: #ffffff; }
+
+  .ss-container, .smartsearch {
+    width: 100%;
+    box-shadow: none; }
+
+  .ss-header, .smartsearch-indicator, .tooltip {
+    display: none;
+    position: absolute !important;
+    top: -9999px !important;
+    left: -9999px !important; }
+
+  .smartsearch h1 {
+    text-align: center; }
+  .smartsearch .smartsearch-content.capture p {
+    text-align: left; }
+  .smartsearch .slideNumber {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px; }
+
+  .smartsearch-footer {
+    width: 100%;
+    background-color: #B0D5E9; }
+
+  .btns-spending {
+    padding-left: 0px;
+    margin: 0 auto; }
+
+  .btns-rewards {
+    padding-left: 0px;
+    margin: 0 auto; }
+
+  .btns-radio {
+    width: 250px;
+    padding-left: 0px;
+    margin: 0 auto; }
+    .btns-radio li {
+      float: none;
+      display: block;
+      min-width: 250px; }
+      .btns-radio li:first-child label, .btns-radio li:last-child label {
+        border-radius: 3px; }
+    .btns-radio .salary, .btns-radio .salary.mid {
+      width: 250px;
+      margin-bottom: 0px; } }
+@media (min-width: 600px) and (max-width: 768px) {
+  .smartsearch-content {
+    padding: 30px 100px; }
+    .smartsearch-content.capture {
+      padding: 30px 60px; }
+      .smartsearch-content.capture p {
+        text-align: left; }
+
+  .btns-spending {
+    width: 400px; }
+
+  .btns-rewards {
+    width: 450px; } }
+@media (max-width: 599px) {
+  .smartsearch .smartsearch-content.capture {
+    background: #fff; }
+    .smartsearch .smartsearch-content.capture .container-fluid {
+      padding: 0px; }
+    .smartsearch .smartsearch-content.capture div[class^="col-"] {
+      width: 100%; }
+    .smartsearch .smartsearch-content.capture input {
+      width: 250px;
+      margin: 0 auto;
+      margin-bottom: 15px; }
+    .smartsearch .smartsearch-content.capture button {
+      display: block;
+      margin: 0 auto; }
+
+  .btns-spending {
+    width: 220px; }
+    .btns-spending li {
+      margin-right: 20px; }
+      .btns-spending li:nth-child(even) {
+        margin-right: 0px; }
+      .btns-spending li:nth-child(3) {
+        margin-right: 20px; }
+      .btns-spending li:nth-child(4) {
+        margin-left: 0px; }
+      .btns-spending li:last-child {
+        margin-left: 60px; }
+
+  .btns-rewards li {
+    width: 100%;
+    height: auto; }
+    .btns-rewards li p {
+      border-top: none;
+      border-bottom: solid 1px #ddd;
+      margin-top: 0px;
+      padding-bottom: 10px; } }
+/***** modal : Prefer To Talk *****/
+@media (max-width: 686px) {
+  .PreferToTalk .modal-dialog {
+    width: 90%;
+    margin: 10px auto; }
+  .PreferToTalk .modal-content {
+    background: #fff;
+    text-align: center; }
+  .PreferToTalk p {
+    margin: 0px auto 15px auto; }
+  .PreferToTalk form {
+    width: 250px;
+    margin: 0px auto; }
+    .PreferToTalk form input {
+      width: 250px; }
+  .PreferToTalk .btn-show {
+    width: 230px;
+    margin: 0px auto 15px auto; } }
