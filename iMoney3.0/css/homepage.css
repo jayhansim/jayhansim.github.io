@@ -470,7 +470,7 @@
 
 /* IE */
 .lt-ie9 .slider {
-  min-height: 500px;
+  height: 500px;
 }
 
 .lt-ie9 .slider__content {
