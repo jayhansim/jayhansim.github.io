@@ -130,17 +130,14 @@ select {
   width: 128px;
   height: 24px;
   background: url(../img/imoney-malaysia-logo.svg) no-repeat;
-  background-size: cover;
-  -ms-behavior: url(//raw.githubusercontent.com/louisremi/background-size-polyfill/gh-pages/backgroundsize.min.htc);
+  background-size: 128px 24px;
   margin: 13px auto;
   display: block;
-  vertical-align: middle;
-  position: relative;
-  z-index: 1; }
+  vertical-align: middle; }
   @media (min-width: 768px) {
     .top__logo {
       margin: 15px 0 0;
-      background-size: cover;
+      background-size: 160px 30px;
       width: 160px;
       height: 30px;
       display: inline-block; } }
@@ -625,4 +622,12 @@ select {
 .no-cssanimations .nav__overlay--active .nav__overlay__top,
 .no-cssanimations .nav__overlay--active .nav__overlay__body {
   opacity: 1;
+}
+
+.lt-ie9 .top__logo {
+  background-image: url(../img/imoney-malaysia-logo-128.png);
+}
+
+@media (min-width: 768px) {
+  background-image: url(../img/imoney-malaysia-logo-160.png);
 }
