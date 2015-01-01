@@ -629,5 +629,7 @@ select {
 }
 
 @media (min-width: 768px) {
-  background-image: url(../img/imoney-malaysia-logo-160.png);
+  .lt-ie9 .top__logo {
+    background-image: url(../img/imoney-malaysia-logo-160.png);
+  } 
 }
