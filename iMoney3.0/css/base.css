@@ -618,3 +618,8 @@ select {
 .slick-slide.slick-active {
   z-index: 2 !important;
 }
+
+.no-cssanimations .nav__overlay--active .nav__overlay__top,
+.no-cssanimations .nav__overlay--active .nav__overlay__body {
+  opacity: 1;
+}
