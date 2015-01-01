@@ -611,10 +611,10 @@ select {
   background: #fff;
 }
 
-.lt-ie9 .slick-slide {
+.slick-slide {
   z-index: 1 !important;
 }
 
-.lt-ie9 .slick-slide.slick-active {
+.slick-slide.slick-active {
   z-index: 2 !important;
 }
