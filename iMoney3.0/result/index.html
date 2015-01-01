@@ -11,16 +11,16 @@
 		
 	
 		<link href='//fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,300,600,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="../css/bootstrap.css">
-		<link rel="stylesheet" href="../css/base.css">
+		<link rel="stylesheet" href="/css/bootstrap.css">
+		<link rel="stylesheet" href="/css/base.css">
 		
-	<link rel="stylesheet" href="../css/results.css">	
-
+	<link rel="stylesheet" href="/css/results.css">	
+	<link rel="stylesheet" href="//raw.githubusercontent.com/daneden/animate.css/master/animate.min.css" type="text/css">
 
 		
-		<script src="../js/modernizr.custom.min.js"></script>
+		<script src="/js/modernizr.custom.min.js"></script>
 		<!--[if lt IE 9]>
-		<script src="../js/plugins/respond.min.js"></script>
+		<script src="/js/plugins/respond.min.js"></script>
 		<![endif]-->
 		
 
@@ -36,16 +36,11 @@
 						iMoney.my
 					</a>
 				</div>
-				<div class="col-md-5 col-md-offset-3 col-sm-6 col-sm-offset-2 col-xs-9">
+				<div class="col-md-5 col-md-offset-3 col-sm-6 col-sm-offset-2 col-xs-12">
 					<div class="smartsearch-logo">
 						Credit Card SmartSearch
 					</div>
-				</div>
-				<div class="col-sm-2 col-xs-3">
-					<div class="text-right">
-						<a href="#">See all 140 cards</a>
-					</div>
-				</div>
+				</div>				
 			</div>
 		</div>
 	</header>
@@ -67,7 +62,7 @@
 		<div class="container-fluid">
 			<div class="row">
 				<!--Featured card-->
-				<div class="results-cards featured-card">					
+				<div class="results-cards featured-card animated fadeInUp">					
 					<div class="results-cards__header">
 						<span class="featured-tag">Featured</span>
 						<div class="card-name">
@@ -172,6 +167,9 @@
 					<div class="results-cards__header">						
 						<div class="card-name">
 							Standard Chartered JustOne Platinum
+						</div>
+						<div class="highlight-card shopping">
+							Best Shopping Card
 						</div>
 						<div class="card-image">
 							<img class="img-responsive" src="/img/stanchart-card.png" />
@@ -312,15 +310,92 @@
 						</div>
 					</div>					
 				</div>
-				<!--#end results card-->
+				<!--#end results card-->				
 			</div>
 		</div>
 	</section>
+	<!-- Skip and Call link -->
+	<section class="results-footer">
+		<div class="container-fluid">		
+			<div class="row">
+				<div class="cta-footer">
+					<ul>
+						<li>
+							<button class="btn-outline" data-target="#skip-link" data-toggle="modal">I didn't find what I was looking for</button>
+						</li>
+						<li>
+							<button class="btn-outline" href="#">Prefer to Talk?</button>
+						</li>
+					</ul>					
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Modal for Skip link -->
+	<div class="modal fade results-skip" id="skip-link">
+		<div class="modal-dialog">
+	    <div class="modal-content">
+	      <div class="modal-header text-center">
+	        <button type="button" class="close" data-dismiss="modal" aria-label="Close"></button>
+	        <h4 class="modal-title" id="myModalLabel">Hi, We see that you want to skip this page.</h4>
+	      </div>
+	      <div class="modal-body">
+	        <p class="desc">Please help us understand why these results didn't work for you</p>
+	        <form class="results-feedback" action="" method="">
+	        	<ul class="radio-skip">
+	        		<li>
+	        			<input type="radio" id="didnt-find" name="result-skip-feedback" value="I didn't find the bank I wanted">
+	        			<label for="didnt-find">I didn't find the bank I wanted</label>
+	        			
+	        		</li>
+	        		<li>
+	        			<input type="radio" id="none-interest" name="result-skip-feedback" value="None of these cards were of interest to me">
+	        			<label for="none-interest">None of these cards were of interest to me</label>     
+	        		</li>
+	        		<li>
+	        			<input type="radio" id="see-more" name="result-skip-feedback" value="I would like to see more options">
+	        			<label for="see-more">I would like to see more options</label>	     
+	        		</li>
+	        		<li>
+	        			<input type="radio" id="refine-search" name="result-skip-feedback" value="I would like to refine my search">
+	        			<label for="refine-search">I would like to refine my search</label>	        			
+	        		</li>
+	        		<li>
+	        			<input type="radio" id="didnt-enough-details" name="result-skip-feedback" value="I didn't have enough details about each card to make a decision">
+	        			<label for="didnt-enough-details">I didn't have enough details about each card to make a decision</label>	        			
+	        		</li>
+	        	</ul>	        
+	      </div>
+	      <!--<div class="modal-footer">	        
+	        <button class="btn" type="submit">Show me all credit cards</button>
+	        
+	      </div>-->
+	    </div>
+	    </form>
+	  </div>
+	</div>
 
 
 
 		
+
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		
+<script type="text/javascript" src="js/transition.min.js"></script>
+<script type="text/javascript" src="js/modal.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		$('[name="result-skip-feedback"]').change(function(){
+			$('.results-feedback').delay(700).queue(function(next){
+				$(this).submit();
+
+				next();
+			});
+		})
+	})
+</script>
+
+
 	</body>
 </html>
