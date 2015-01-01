@@ -134,7 +134,9 @@ select {
   -ms-behavior: url(//raw.githubusercontent.com/louisremi/background-size-polyfill/gh-pages/backgroundsize.min.htc);
   margin: 13px auto;
   display: block;
-  vertical-align: middle; }
+  vertical-align: middle;
+  position: relative;
+  z-index: 1; }
   @media (min-width: 768px) {
     .top__logo {
       margin: 15px 0 0;
