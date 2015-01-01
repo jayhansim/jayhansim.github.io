@@ -477,3 +477,13 @@
 .lt-ie9 .slider__content {
   top: 25%;
 }
+
+@media (max-width: 767px) {
+  .lt-ie9 .slider__content {
+    top: 0;
+  }
+
+  .lt-ie9 .slider {
+    height: 650px;
+  }
+}
