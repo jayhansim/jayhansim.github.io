@@ -120,6 +120,7 @@
 
 .slider__pickup {
   display: block;
+  background-color: #dee7ed;
   background-color: rgba(214, 225, 232, 0.9);
   padding: 15px;
   color: #687179;
