@@ -1,1 +1,31 @@
-<svg width="98" height="16" viewBox="0 0 98 16" xmlns="http://www.w3.org/2000/svg"><title>icon-navbar</title><desc>Created with Sketch.</desc><g fill="none"><g fill="#fff"><path d="M38.028 10.18l-8.384-8.216c-.3-.303-.897-.303-1.196 0l-8.4 8.236L19 9.062 27.4.826c.898-.835 2.32-.835 3.216 0L39 9.04l-.972 1.14z" stroke="#fff" stroke-width=".4"/><path d="M34 1h2v13h-2z"/><path d="M31 16h3.99c.557 0 1.007-.448 1.007-1V7.43L29 0l-7 10v5.01c0 .54.45.99 1.007.99H27v-5h4v5z"/><path d="M57 0H41c-.552 0-1 .448-1 1v10c0 .552.448 1 1 1h16c.552 0 1-.448 1-1V1c0-.552-.448-1-1-1zM19 8c0 .552-.448 1-1 1H23c-.552 0-1-.448-1-1V2c0-.552.448-1 1-1h14c.552 0 1 .448 1 1v6zM23 8h14V2H23v6zm7-5c1.105 0 2 .895 2 2s-.895 2-2 2-2-.895-2-2 .895-2 2-2z" id="Imported-Layers"/></g><g fill="#fff"><path d="M58 0h2v2h-2zM58 4h2v2h-2zM62 0h10v2H62zM62 4h8v2h-8z"/><path d="M58 8h2v2h-2z"/><path d="M62 8h8v2h-8z"/></g><path d="M72 1.994C72 .894 72.897 0 74.006 0h9.988C85.102 0 86 .895 86 1.994v12.012c0 1.1-.897 1.994-2.006 1.994h-9.988C72.898 16 72 15.105 72 14.006V1.994zM74 13c0-.552.456-1 1.002-1H86v2H75.002C74.45 14 74 13.556 74 13zm7-13h3v6l-1.512-1.046L81 6V0zm4.275 11.306c.5-.5.725-1.3.725-1.3V12h-2s.775-.195 1.275-.694z" fill="#fff"/><g fill="#fff"><path d="M0 11c0 .552.448 1 1 1h16c.552 0 1-.448 1-1V5H0v6zm7-3h2v2H7V8zM2 8h4v2H2V8z"/><path d="M17 0H1C.448 0 0 .448 0 1v2h18V1c0-.552-.448-1-1-1"/></g><path d="M93.263 6L98 10.737 96.737 12 92 7.263 87.263 12 86 10.737 90.737 6 86 1.263 87.263 0 92 4.737 96.737 0 98 1.263 93.263 6z" fill="#708EAC"/></g></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="98px" height="16px" viewBox="0 0 98 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.2.2 (9983) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-navbar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="icon-navbar" sketch:type="MSArtboardGroup">
+            <g id="Group-2" sketch:type="MSLayerGroup" transform="translate(19.000000, 0.000000)" fill="#FFFFFF">
+                <path d="M19.0278449,10.1791433 L10.6440461,1.96436427 C10.3449215,1.66081774 9.74667219,1.66081774 9.44754754,1.96436427 L1.04693628,10.2 L-4.86237492e-14,9.06170055 L8.40061126,0.826064772 C9.29798522,-0.00868819369 10.7188273,-0.00868819369 11.6162013,0.826064772 L20,9.04084377 L19.0278449,10.1791433 Z" id="Shape" stroke="#FFFFFF" stroke-width="0.4" sketch:type="MSShapeGroup"></path>
+                <rect id="Rectangle-path" sketch:type="MSShapeGroup" x="15" y="1" width="2" height="13"></rect>
+                <path d="M12,16 L15.9906621,16 C16.547452,16 16.9973145,15.5522974 16.9973145,15.0000283 L16.9973145,7.42904551 L10,0 L3,10 L3,15.009222 C3,15.5490248 3.4506936,16 4.00665234,16 L8,16 L8,11 L12,11 L12,16 Z" id="Path-29" sketch:type="MSShapeGroup"></path>
+                <path d="M38,0 L22,0 C21.448,0 21,0.448 21,1 L21,11 C21,11.552 21.448,12 22,12 L38,12 C38.552,12 39,11.552 39,11 L39,1 C39,0.448 38.552,0 38,0 L38,0 Z M38,8 C38,8.552 37.552,9 37,9 L23,9 C22.448,9 22,8.552 22,8 L22,2 C22,1.448 22.448,1 23,1 L37,1 C37.552,1 38,1.448 38,2 L38,8 L38,8 Z M23,8 L37,8 L37,2 L23,2 L23,8 Z M30,3 C31.105,3 32,3.895 32,5 C32,6.105 31.105,7 30,7 C28.895,7 28,6.105 28,5 C28,3.895 28.895,3 30,3 L30,3 Z" id="Imported-Layers" sketch:type="MSShapeGroup"></path>
+            </g>
+            <g id="Group" sketch:type="MSLayerGroup" transform="translate(58.000000, 0.000000)" fill="#FFFFFF">
+                <rect id="Rectangle-48" sketch:type="MSShapeGroup" x="0" y="0" width="2" height="2"></rect>
+                <rect id="Rectangle-48" sketch:type="MSShapeGroup" x="0" y="4" width="2" height="2"></rect>
+                <rect id="Rectangle-48" sketch:type="MSShapeGroup" x="4" y="0" width="10" height="2"></rect>
+                <rect id="Rectangle-48" sketch:type="MSShapeGroup" x="4" y="4" width="8" height="2"></rect>
+                <rect id="Rectangle-50" sketch:type="MSShapeGroup" x="0" y="8" width="2" height="2"></rect>
+                <rect id="Rectangle-49" sketch:type="MSShapeGroup" x="4" y="8" width="8" height="2"></rect>
+            </g>
+            <path d="M72,1.99406028 C72,0.892771196 72.8970601,0 74.0058587,0 L83.9941413,0 C85.1019465,0 86,0.894513756 86,1.99406028 L86,14.0059397 C86,15.1072288 85.1029399,16 83.9941413,16 L74.0058587,16 C72.8980535,16 72,15.1054862 72,14.0059397 L72,1.99406028 Z M74,13 C74,12.4477153 74.455761,12 75.0024733,12 L86,12 L86,14 L75.0024733,14 C74.4488226,14 74,13.5561352 74,13 Z M81,0 L84,0 L84,6 L82.4875488,4.95410156 L81,6 L81,0 Z M85.2750244,11.3059082 C85.775116,10.8071289 86,10.0048828 86,10.0048828 L86,12 L83.9996338,12 C83.9996338,12 84.7749329,11.8046875 85.2750244,11.3059082 Z" id="Rectangle-61" fill="#FFFFFF" sketch:type="MSShapeGroup"></path>
+            <g id="Imported-Layers" sketch:type="MSLayerGroup" fill="#FFFFFF">
+                <path d="M0,11 C0,11.552 0.448,12 1,12 L17,12 C17.552,12 18,11.552 18,11 L18,5 L0,5 L0,11 L0,11 Z M7,8 L9,8 L9,10 L7,10 L7,8 Z M2,8 L6,8 L6,10 L2,10 L2,8 Z" id="Fill-1" sketch:type="MSShapeGroup"></path>
+                <path d="M17,0 L1,0 C0.448,0 0,0.448 0,1 L0,3 L18,3 L18,1 C18,0.448 17.552,0 17,0" id="Fill-2" sketch:type="MSShapeGroup"></path>
+            </g>
+            <path d="M93.2631579,6 L98,10.7368421 L96.7368421,12 L92,7.26315789 L87.2631579,12 L86,10.7368421 L90.7368421,6 L86,1.26315789 L87.2631579,0 L92,4.73684211 L96.7368421,0 L98,1.26315789 L93.2631579,6 Z" id="Line" fill="#708EAC" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
