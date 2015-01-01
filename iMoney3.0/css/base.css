@@ -608,6 +608,13 @@ select {
 }
 
 .lt-ie9 .nav__overlay {
-  overflow-y: visible;
   background: #fff;
+}
+
+.lt-ie9 .slick-slide {
+  z-index: 1 !important;
+}
+
+.lt-ie9 .slick-slide.slick-active {
+  z-index: 2 !important;
 }
