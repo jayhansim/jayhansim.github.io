@@ -466,3 +466,13 @@
     width: 12px;
     height: 18px;
     background-position: right; }
+
+
+/* IE */
+.lt-ie9 .slider {
+  min-height: 500px;
+}
+
+.lt-ie9 .slider__content {
+  top: 25%;
+}

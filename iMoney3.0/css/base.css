@@ -272,7 +272,7 @@ select {
     top: 2px;
     height: 16px; }
     .no-svg .nav__item i {
-      background-img: url(../img/icon-navbar.png); }
+      background-image: url(../img/icon-navbar.png); }
     @media (max-width: 767px) {
       .nav__item i {
         display: block;
@@ -600,3 +600,9 @@ select {
     overflow: hidden; }
   .cf:after {
     clear: both; }
+
+
+/* IE */
+.lt-ie9 .top__call {
+  top: 17%;
+}
