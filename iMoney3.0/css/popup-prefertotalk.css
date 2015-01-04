@@ -1,0 +1,62 @@
+/* base font color */
+/* #5e6a77 lighter font color */
+/* color for darkblue section */
+/***** modal : Prefer To Talk *****/
+.PreferToTalk .modal-dialog {
+  width: 670px; }
+.PreferToTalk .modal-content {
+  background: #fff url(../img/img_man.png) no-repeat;
+  background-position: 50px 30px;
+  background-size: 40% auto;
+  padding: 15px; }
+  .PreferToTalk .modal-content .wrapper {
+    padding: 25px; }
+  .PreferToTalk .modal-content .close {
+    line-height: 0.6; }
+.PreferToTalk .modal-backdrop {
+  background-color: #fff; }
+  .PreferToTalk .modal-backdrop.in {
+    opacity: 0.8; }
+.PreferToTalk h1 {
+  font-size: 28px;
+  font-size: 2.8rem;
+  font-weight: 500;
+  text-align: center;
+  color: #F0703B;
+  margin-top: 0px; }
+.PreferToTalk p {
+  margin-left: 230px;
+  margin-bottom: 15px; }
+.PreferToTalk form {
+  margin-left: 300px; }
+  .PreferToTalk form input {
+    width: 280px;
+    height: 40px; }
+  .PreferToTalk form .icn_name {
+    background-position: 7px 7px; }
+  .PreferToTalk form .icn_tel {
+    background-position: 7px -91px;
+    margin-bottom: 15px; }
+  .PreferToTalk form .btn-show {
+    margin-bottom: 15px; }
+  .PreferToTalk form a {
+    font-size: 12px;
+    font-size: 1.2rem; }
+
+@media (max-width: 686px) {
+  .PreferToTalk .modal-dialog {
+    width: 90%;
+    margin: 10px auto; }
+  .PreferToTalk .modal-content {
+    background: #fff;
+    text-align: center; }
+  .PreferToTalk p {
+    margin: 0px auto 15px auto; }
+  .PreferToTalk form {
+    width: 250px;
+    margin: 0px auto; }
+    .PreferToTalk form input {
+      width: 250px; }
+  .PreferToTalk .btn-show {
+    width: 230px;
+    margin: 0px auto 15px auto; } }

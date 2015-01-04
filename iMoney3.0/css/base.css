@@ -129,7 +129,7 @@ select {
 .top__logo {
   width: 128px;
   height: 24px;
-  background: url(../img/imoney-malaysia-logo.svg) no-repeat;
+  background: url(../img/imoney-malaysia-logo.png) no-repeat;
   background-size: 100%;
   margin: 13px auto;
   display: block;
@@ -137,12 +137,10 @@ select {
   @media (min-width: 768px) {
     .top__logo {
       margin: 15px 0 0;
-      background-size: 100%;
+      background-size: 160px 28px;
       width: 160px;
-      height: 30px;
+      height: 28px;
       display: inline-block; } }
-  .no-svg .top__logo {
-    background-image: url(../img/imoney-malaysia-logo.png); }
 
 .top__slogan {
   display: none;
