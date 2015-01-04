@@ -270,7 +270,7 @@ select {
     top: 2px;
     height: 16px; }
     .no-svg .nav__item i {
-      background-images: url(../img/icon-topnav.png); }
+      background-image: url(../img/icon-topnav.png); }
     @media (max-width: 767px) {
       .nav__item i {
         display: block;
