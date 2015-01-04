@@ -118,7 +118,7 @@ select {
   font-size: 12px;
   font-size: 1.2rem;
   position: relative;
-  z-index: 4; }
+  z-index: 5; }
   .top .container {
     height: 50px;
     position: relative; }
@@ -130,14 +130,14 @@ select {
   width: 128px;
   height: 24px;
   background: url(../img/imoney-malaysia-logo.svg) no-repeat;
-  background-size: 128px 24px;
+  background-size: 100%;
   margin: 13px auto;
   display: block;
   vertical-align: middle; }
   @media (min-width: 768px) {
     .top__logo {
       margin: 15px 0 0;
-      background-size: 160px 30px;
+      background-size: 100%;
       width: 160px;
       height: 30px;
       display: inline-block; } }
@@ -178,10 +178,10 @@ select {
   .top__call a {
     font-size: 18px;
     font-size: 1.8rem;
-    background: url(../img/icon-top-phone.svg) no-repeat left;
+    background: url(../img/icon-topnav.svg) no-repeat -98px 5px;
     padding-left: 20px; }
     .no-svg .top__call a {
-      background-image: url(../img/icon-top-phone.png); }
+      background-image: url(../img/icon-topnav.png); }
     @media (max-width: 767px) {
       .top__call a {
         font-size: 16px;
@@ -265,14 +265,14 @@ select {
       .nav__item > a {
         padding: 0 10px; } }
   .nav__item i {
-    background: url(../img/icon-navbar.svg);
+    background: url(../img/icon-topnav.svg);
     display: inline-block;
     margin-right: 8px;
     position: relative;
     top: 2px;
     height: 16px; }
     .no-svg .nav__item i {
-      background-images: url(../img/icon-navbar.png); }
+      background-images: url(../img/icon-topnav.png); }
     @media (max-width: 767px) {
       .nav__item i {
         display: block;
@@ -357,12 +357,14 @@ select {
       font-size: 16px;
       font-size: 1.6rem;
       margin-top: 5px; }
-      .nav__overlay__top .nav__overlay__close:hover i {
-        -webkit-transform: rotate(180deg);
-        -moz-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-        -o-transform: rotate(180deg);
-        transform: rotate(180deg); }
+      .nav__overlay__top .nav__overlay__close:hover {
+        text-decoration: none; }
+        .nav__overlay__top .nav__overlay__close:hover i {
+          -webkit-transform: rotate(90deg);
+          -moz-transform: rotate(90deg);
+          -ms-transform: rotate(90deg);
+          -o-transform: rotate(90deg);
+          transform: rotate(90deg); }
       .nav__overlay__top .nav__overlay__close i {
         display: inline-block;
         width: 12px;
@@ -371,10 +373,10 @@ select {
         background-position: -86px 0;
         position: relative;
         top: 0;
-        -webkit-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        -moz-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        -o-transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
-        transition: all 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        -webkit-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        -moz-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        -o-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+        transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
         /* easeInOutQuad */ }
   .nav__overlay__body {
     background: #2c96b8;
@@ -409,12 +411,39 @@ select {
           text-decoration: none; }
 
 .mb-mainnav {
-  background: #2c96b8;
+  position: absolute;
+  background: transparent;
   width: 100%;
-  padding: 5px 15px;
-  display: none; }
+  bottom: 0;
+  top: 50px;
+  overflow: hidden;
+  -webkit-transition: background 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  -moz-transition: background 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+  transition: background 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  @media (min-width: 768px) {
+    .mb-mainnav {
+      display: none !important; } }
   .mb-mainnav a {
     color: #fff; }
+  .mb-mainnav-inner {
+    padding: 5px 15px;
+    background: #2c96b8;
+    -webkit-transform: translateY(-100%);
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -o-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: -moz-transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: transform 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955); }
+  .mb-mainnav--active .mb-mainnav {
+    background: rgba(0, 0, 0, 0.9); }
+    .mb-mainnav--active .mb-mainnav-inner {
+      -webkit-transform: translateY(0);
+      -moz-transform: translateY(0);
+      -ms-transform: translateY(0);
+      -o-transform: translateY(0);
+      transform: translateY(0); }
 
 .mb-mainnav-inner {
   overflow: hidden; }
