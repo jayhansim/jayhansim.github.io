@@ -5,28 +5,73 @@
 /* #5e6a77 lighter font color */
 /* color for darkblue section */
 /***** modal : Prefer To Talk *****/
+.PreferToTalk .close-wrap {
+  text-align: right;
+  padding-top: 7px;
+  padding-bottom: 10px; }
+.PreferToTalk .close-btn {
+  color: #99B6CB;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  font-size: 16px;
+  font-size: 1.6rem; }
+  .PreferToTalk .close-btn:hover {
+    text-decoration: none; }
+    .PreferToTalk .close-btn:hover i {
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg); }
+  .PreferToTalk .close-btn i {
+    background: url(/img/icon-topnav.svg);
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background-position: -86px 0;
+    position: relative;
+    top: 0;
+    margin-right: 5px;
+    -webkit-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -moz-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    -o-transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transition: all 0.25s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    /* easeInOutQuad */ }
 .PreferToTalk .modal-dialog {
-  width: 670px; }
+  width: 670px;
+  margin: 10px auto; }
 .PreferToTalk .modal-content {
-  background: #fff url(../img/img_man.png) no-repeat;
-  background-position: 50px 30px;
-  background-size: 40% auto;
+  background: #fff url(../img/img_man.jpg) no-repeat;
+  background-position: 40px 40px;
+  background-size: 44% auto;
   padding: 15px; }
   .PreferToTalk .modal-content .wrapper {
     padding: 25px; }
+    @media (max-width: 480px) {
+      .PreferToTalk .modal-content .wrapper {
+        padding: 5px; } }
   .PreferToTalk .modal-content .close {
     line-height: 0.6; }
 .PreferToTalk .modal-backdrop {
-  background-color: #fff; }
+  background-color: #000; }
   .PreferToTalk .modal-backdrop.in {
     opacity: 0.8; }
 .PreferToTalk h1 {
   font-size: 28px;
   font-size: 2.8rem;
   font-weight: 500;
-  text-align: center;
+  text-align: left;
   color: #F0703B;
-  margin-top: 0px; }
+  margin-top: 0px;
+  margin-left: 230px; }
+  @media (max-width: 686px) {
+    .PreferToTalk h1 {
+      margin-left: 0;
+      text-align: center; } }
+  @media (max-width: 480px) {
+    .PreferToTalk h1 {
+      font-size: 21px;
+      font-size: 2.1rem; } }
 .PreferToTalk p {
   margin-left: 230px;
   margin-bottom: 15px; }
@@ -37,14 +82,61 @@
     height: 40px; }
   .PreferToTalk form .icn_name {
     background-position: 7px 7px; }
+  .PreferToTalk form .icn_email {
+    background-position: 7px -44px; }
   .PreferToTalk form .icn_tel {
-    background-position: 7px -91px;
-    margin-bottom: 15px; }
+    background-position: 7px -91px; }
   .PreferToTalk form .btn-show {
     margin-bottom: 15px; }
   .PreferToTalk form a {
     font-size: 12px;
     font-size: 1.2rem; }
+
+.modal-green-box {
+  background: #3FA361;
+  padding: 25px 10px; }
+  .modal-green-box h1, .modal-green-box h2, .modal-green-box h3, .modal-green-box h4, .modal-green-box h5, .modal-green-box h6 {
+    color: #ffffff;
+    margin: 0;
+    font-weight: 500;
+    text-align: center; }
+  .modal-green-box h3 {
+    font-size: 25px;
+    font-size: 2.5rem; }
+
+.related-content-top {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e1e1; }
+  .related-content-top h4 {
+    max-width: 400px;
+    margin: 10px auto 17px;
+    text-align: center; }
+    @media (max-width: 480px) {
+      .related-content-top h4 {
+        margin: 10px 0 17px;
+        text-align: left; } }
+
+.related-content-bottom {
+  padding-top: 20px; }
+
+.related-products-link {
+  margin: 0;
+  padding: 0;
+  text-align: center; }
+  .related-products-link li {
+    display: inline-block;
+    margin: 0 10px 5px; }
+
+.modal-articles a {
+  font-size: 16px;
+  font-size: 1.6rem; }
+.modal-articles li {
+  margin-bottom: 5px;
+  padding-left: 25px;
+  background: url(/img/list-bullet.png) 7px 9px no-repeat; }
+
+#PreferToTalkThankYou .modal-body {
+  padding-bottom: 23px; }
 
 @media (max-width: 686px) {
   .PreferToTalk .modal-dialog {
@@ -63,8 +155,27 @@
   .PreferToTalk .btn-show {
     width: 230px;
     margin: 0px auto 15px auto; } }
+@media (max-width: 480px) {
+  .modal-green-box {
+    padding-top: 18px;
+    padding-bottom: 18px; }
+    .modal-green-box h2 {
+      font-size: 22px;
+      font-size: 2.2rem; } }
 html, body {
   background-color: #B0D5E9; }
+
+/* overwrite animate css animation time */
+.animated {
+  -webkit-animation-duration: 1.2s;
+  -moz-animation-duration: 1.2s;
+  animation-duration: 1.2s; }
+
+.select-categories {
+  font-size: 16px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 17px; }
 
 .cc-smartsearch-header {
   padding: 10px 0;
@@ -75,7 +186,6 @@ html, body {
     color: #2F7FBA;
     font-size: 20px;
     font-size: 2rem;
-    line-height: 2;
     padding-left: 53px;
     background: url(../img/ss-icon@2x.png) no-repeat 0 0;
     background-size: 49px 29px; }
@@ -126,8 +236,15 @@ html, body {
   .smartsearch .smartsearch-content {
     padding: 30px; }
     .smartsearch .smartsearch-content.capture {
-      background: url(../cc-smartsearch/img/img_girl.png) no-repeat bottom right;
-      background-size: 200px auto; }
+      background: url(../img/credit-card/img_girl.jpg) no-repeat bottom right;
+      background-size: 200px auto;
+      padding-bottom: 35px; }
+      .smartsearch .smartsearch-content.capture .form-group {
+        margin-bottom: 10px; }
+      @media (max-width: 599px) {
+        .smartsearch .smartsearch-content.capture .form-group {
+          text-align: center;
+          margin-bottom: 12px; } }
       .smartsearch .smartsearch-content.capture div[class^="col-"] {
         padding: 0px; }
       .smartsearch .smartsearch-content.capture p {
@@ -154,7 +271,8 @@ html, body {
   float: left;
   background-color: #33709C;
   margin-top: 10px;
-  padding: 0px; }
+  padding: 0px;
+  padding-bottom: 20px; }
   .smartsearch-indicator ul.slick-slider {
     position: static;
     list-style: none;
@@ -164,42 +282,45 @@ html, body {
       display: table-cell;
       position: relative;
       width: 100px !important;
-      height: 100px;
-      margin: 0px;
-      padding: 25px 23px; }
-  .smartsearch-indicator .icn_spending, .smartsearch-indicator .icn_reward, .smartsearch-indicator .icn_balance, .smartsearch-indicator .icn_salary {
+      height: 80px;
+      margin: 0 5px;
+      padding: 20px 23px; }
+  .smartsearch-indicator .icn_start, .smartsearch-indicator .icn_spending, .smartsearch-indicator .icn_reward, .smartsearch-indicator .icn_balance, .smartsearch-indicator .icn_salary {
     width: 55px;
     height: 50px;
     display: block;
     position: relative;
-    cursor: pointer;
-    background: url(../cc-smartsearch/img/icn_indicator.png) no-repeat;
-    background-size: 163px auto; }
+    background: url(../img/credit-card/icn_indicator.png) no-repeat;
+    background-size: 166px auto; }
+  .smartsearch-indicator .icn_start {
+    background-position: 0px 15px; }
+    .smartsearch-indicator .icn_start.icn_highlight {
+      background-position: -109px 15px; }
   .smartsearch-indicator .icn_spending {
-    background-position: 5px 0px; }
+    background-position: 5px -60px; }
     .smartsearch-indicator .icn_spending.icn_highlight {
-      background-position: -105px 0px; }
+      background-position: -105px -60px; }
   .smartsearch-indicator .icn_reward {
-    background-position: 0px -110px; }
+    background-position: 0px -150px; }
     .smartsearch-indicator .icn_reward.icn_highlight {
-      background-position: -108px -110px; }
+      background-position: -108px -150px; }
   .smartsearch-indicator .icn_balance {
-    background-position: 0px -220px; }
+    background-position: 0px -250px; }
     .smartsearch-indicator .icn_balance.icn_highlight {
-      background-position: -110px -220px; }
+      background-position: -110px -250px; }
   .smartsearch-indicator .icn_salary {
-    background-position: 0px -330px; }
+    background-position: 0px -360px; }
     .smartsearch-indicator .icn_salary.icn_highlight {
-      background-position: -110px -330px; }
-  .smartsearch-indicator .icn_spending:after, .smartsearch-indicator .icn_reward:after, .smartsearch-indicator .icn_balance:after {
+      background-position: -110px -360px; }
+  .smartsearch-indicator .icn_start:after, .smartsearch-indicator .icn_spending:after, .smartsearch-indicator .icn_reward:after, .smartsearch-indicator .icn_balance:after {
     content: "";
     display: block;
     position: absolute;
     width: 7px;
     height: 34px;
-    background: url(../cc-smartsearch/img/icn_indicator_arrow.png) no-repeat;
+    background: url(../img/credit-card/icn_indicator_arrow.png) no-repeat;
     background-size: 6px auto;
-    top: 60px;
+    top: 53px;
     left: 25px; }
   .smartsearch-indicator .icn_highlight {
     -webkit-animation-name: fadingIn;
@@ -216,7 +337,7 @@ html, body {
     position: absolute;
     width: 20px;
     height: 16px;
-    background: url(../cc-smartsearch/img/tick_white.png) no-repeat;
+    background: url(../img/credit-card/tick_white.png) no-repeat;
     background-size: 20px auto;
     top: 43px;
     left: 40px; }
@@ -236,7 +357,8 @@ html, body {
     padding: 5px 15px;
     margin-bottom: 10px;
     border: solid 1px #3F80AE;
-    border-radius: 15px; }
+    border-radius: 15px;
+    outline: none; }
     .smartsearch-footer .btn-line:hover {
       background-color: #3F80AE;
       color: #fff; }
@@ -252,9 +374,9 @@ html, body {
   list-style-position: inside;
   overflow: hidden; }
 
-.btns-spending li:nth-child(3) {
+.btns-spending li:nth-of-type(3) {
   margin-right: 0px; }
-.btns-spending li:nth-child(4) {
+.btns-spending li:nth-of-type(4) {
   margin-left: 50px; }
 
 .btns-spending li, .btns-rewards li, .btns-radio li {
@@ -323,7 +445,7 @@ html, body {
   position: absolute;
   top: 25px;
   left: 35px;
-  background: url(../cc-smartsearch/img/icn_spending.png) no-repeat;
+  background: url(../img/credit-card/icn_spending.png) no-repeat;
   background-size: 66px auto; }
 
 .icn_petrol:before {
@@ -378,7 +500,7 @@ input[type="checkbox"]:checked + label.icn_utility:before {
 input[type="checkbox"]:checked + label:after,
 input[type="radio"]:checked + label:after,
 .btns-radio input[type="radio"]:checked + label:before {
-  background: #fff url(../cc-smartsearch/img/tick_orange.png) no-repeat 5px 5px;
+  background: #fff url(../img/credit-card/tick_orange.png) no-repeat 5px 5px;
   background-size: 10px auto; }
 
 .btns-rewards li {
@@ -413,7 +535,7 @@ input[type="radio"]:checked + label:after,
   position: absolute;
   top: 0px;
   left: 0px;
-  background: url(../cc-smartsearch/img/icn_rewards.png) no-repeat;
+  background: url(../img/credit-card/icn_rewards.png) no-repeat;
   background-size: 100px auto; }
 
 input[type="radio"]:checked + label.icn_cashback {
@@ -471,11 +593,23 @@ input[type="radio"]:checked + label.icn_travelrewards {
 .btns-radio .salary.mid li {
   width: 190px; }
 
+.btns-radio.btns-radio--cc-purpose {
+  padding-right: 40px;
+  overflow: auto; }
+  .btns-radio.btns-radio--cc-purpose li {
+    float: none;
+    display: block; }
+    @media (max-width: 767px) {
+      .btns-radio.btns-radio--cc-purpose li {
+        height: auto; } }
+  .btns-radio.btns-radio--cc-purpose label {
+    border-radius: 3px; }
+
 input[type="text"],
 input[type="tel"],
 input[type="email"] {
   width: 280px;
-  border: solid 1px #ddd;
+  border: solid 1px #bababa;
   box-shadow: none;
   margin-top: 10px;
   position: relative; }
@@ -501,7 +635,7 @@ input[type="email"] {
   color: #eee; }
 
 .icn_name, .icn_email, .icn_tel {
-  background: url(../cc-smartsearch/img/icn_form.png) no-repeat;
+  background: url(../img/credit-card/icn_form.png) no-repeat;
   background-size: 24px auto;
   padding-left: 40px; }
 
@@ -514,7 +648,13 @@ input[type="email"] {
 .icn_tel {
   background-position: 7px -94px; }
 
-.btn-show {
+.color-red {
+  color: #EB3A63; }
+
+.parsley-error.form-control {
+  border-color: #EB3A63; }
+
+.btn-show, .btn-callback {
   background: #44B74D;
   box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.3);
   font-size: 15px;
@@ -524,7 +664,7 @@ input[type="email"] {
   -webkit-transition: background 0.1s ease-in;
   -moz-transition: background 0.1s ease-in;
   transition: background 0.1s ease-in; }
-  .btn-show:hover, .btn-show:focus, .btn-show:active {
+  .btn-show:hover, .btn-show:focus, .btn-show:active, .btn-callback:hover, .btn-callback:focus, .btn-callback:active {
     background: #3da445;
     color: #fff;
     outline: 0; }
@@ -556,7 +696,7 @@ a.tooltip {
     background-color: #fff;
     color: #859297; }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   html, body {
     background-color: #ffffff; }
 
@@ -569,7 +709,6 @@ a.tooltip {
     .cc-smartsearch-header .smartsearch-logo {
       color: #ffffff;
       background-image: url(../img/ss-icon-white@2x.png);
-      background-position: 0 5px;
       background-size: 34px 22px;
       padding-left: 40px;
       font-size: 16px;
@@ -621,7 +760,7 @@ a.tooltip {
     .btns-radio .salary, .btns-radio .salary.mid {
       width: 250px;
       margin-bottom: 0px; } }
-@media (min-width: 600px) and (max-width: 768px) {
+@media (min-width: 600px) and (max-width: 767px) {
   .smartsearch-content {
     padding: 30px 100px; }
     .smartsearch-content.capture {
@@ -644,7 +783,7 @@ a.tooltip {
     .smartsearch .smartsearch-content.capture input {
       width: 250px;
       margin: 0 auto;
-      margin-bottom: 15px; }
+      margin-bottom: 2px; }
     .smartsearch .smartsearch-content.capture button {
       display: block;
       margin: 0 auto; }
@@ -653,11 +792,11 @@ a.tooltip {
     width: 220px; }
     .btns-spending li {
       margin-right: 20px; }
-      .btns-spending li:nth-child(even) {
+      .btns-spending li:nth-of-type(even) {
         margin-right: 0px; }
-      .btns-spending li:nth-child(3) {
+      .btns-spending li:nth-of-type(3) {
         margin-right: 20px; }
-      .btns-spending li:nth-child(4) {
+      .btns-spending li:nth-of-type(4) {
         margin-left: 0px; }
       .btns-spending li:last-child {
         margin-left: 60px; }
