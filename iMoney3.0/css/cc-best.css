@@ -200,7 +200,7 @@
         left: 0;
         width: 18px;
         height: 18px;
-        background: #85d28b url(/img/tick-icon@2x.png) no-repeat 4px 5px;
+        background: #85d28b url(../img/tick-icon@2x.png) no-repeat 4px 5px;
         background-size: 11px 9px;
         box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
 .card__features {
@@ -269,7 +269,7 @@
     content: "";
     width: 9px;
     height: 10px;
-    background-image: url(/img/best-arrow-icon@2x.png);
+    background-image: url(../img/best-arrow-icon@2x.png);
     background-size: 9px 10px;
     left: 10px;
     top: 10px;
