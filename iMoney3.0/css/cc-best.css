@@ -1,0 +1,413 @@
+/* base font color */
+/* #5e6a77 lighter font color */
+/* color for darkblue section */
+.cc-best-shopping .navbar--sub__shopping a,
+.cc-best-travel .navbar--sub__travel a,
+.cc-best-petrol .navbar--sub__petrol a,
+.cc-best-rewards .navbar--sub__rewards a,
+.cc-best-cashback .navbar--sub__cashback a,
+.cc-best-dining .navbar--sub__dining a {
+  background-color: rgba(112, 142, 171, 0.1);
+  box-shadow: none;
+  color: #193d5a; }
+  @media (max-width: 767px) {
+    .cc-best-shopping .navbar--sub__shopping a,
+    .cc-best-travel .navbar--sub__travel a,
+    .cc-best-petrol .navbar--sub__petrol a,
+    .cc-best-rewards .navbar--sub__rewards a,
+    .cc-best-cashback .navbar--sub__cashback a,
+    .cc-best-dining .navbar--sub__dining a {
+      color: #193d5a;
+      box-shadow: inset 0 -2px 0 #2c96b8;
+      font-family: "open_sansbold", "Helvetica Neue", Arial, sans-serif;
+      box-shadow: none; } }
+
+[class*="cc-best-"] .navbar--sub__sub--dropdown {
+  color: #193d5a;
+  box-shadow: inset 0 -2px 0 #2c96b8;
+  font-family: "open_sansbold", "Helvetica Neue", Arial, sans-serif; }
+
+.header--page {
+  /* overwrites */ }
+  [class*="cc-best-"] .header--page {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    text-align: center; }
+    [class*="cc-best-"] .header--page h1 {
+      color: #fff;
+      text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5); }
+  .cc-best-shopping .header--page {
+    background-image: url(../img/credit-card/best/header-cc-shopping.jpg);
+    background-color: #c65d8b; }
+  .cc-best-travel .header--page {
+    background-image: url(../img/credit-card/best/header-cc-travel.jpg);
+    background-color: #33b7c1; }
+  .cc-best-petrol .header--page {
+    background-image: url(../img/credit-card/best/header-cc-petrol.jpg);
+    background-color: #ece328; }
+  .cc-best-rewards .header--page {
+    background-image: url(../img/credit-card/best/header-cc-rewards.jpg);
+    background-color: #14927b; }
+  .cc-best-cashback .header--page {
+    background-image: url(../img/credit-card/best/header-cc-cashback.jpg);
+    background-color: #50a1e1; }
+  .cc-best-dining .header--page {
+    background-image: url(../img/credit-card/best/header-cc-dining.jpg);
+    background-color: #c24b4b; }
+
+.header__bestpoints {
+  margin-top: 15px;
+  position: relative;
+  z-index: 2; }
+  .header__bestpoints__point {
+    display: inline-block;
+    padding: 7.5px 15px;
+    border-radius: 20px;
+    background: #2c96b8;
+    font-size: 13px;
+    font-size: 1.3rem;
+    color: #fff;
+    margin: 0 3px 6px;
+    /* overwrites */ }
+    .cc-best-shopping .header__bestpoints__point {
+      background-color: #c65d8b; }
+    .cc-best-travel .header__bestpoints__point {
+      background-color: #33b7c1; }
+    .cc-best-petrol .header__bestpoints__point {
+      background-color: #ece328;
+      color: #434c55; }
+    .cc-best-rewards .header__bestpoints__point {
+      background-color: #14927b; }
+    .cc-best-cashback .header__bestpoints__point {
+      background-color: #50a1e1; }
+    .cc-best-dining .header__bestpoints__point {
+      background-color: #c24b4b; }
+
+.listing__cc-best .listing__items {
+  list-style: none;
+  padding-left: 0;
+  margin: 0 -1%; }
+  .listing__cc-best .listing__items > li {
+    float: left;
+    width: 23%;
+    margin: 0 1%; }
+    @media (max-width: 991px) {
+      .listing__cc-best .listing__items > li {
+        float: none;
+        width: auto;
+        margin-bottom: 60px; }
+        .listing__cc-best .listing__items > li:last-child {
+          margin-bottom: 0; } }
+.listing__cc-best.listing {
+  margin-top: -10px;
+  margin-bottom: 60px; }
+
+[class*="cc-best-"] .listing__items li {
+  background: transparent;
+  box-shadow: none; }
+
+.product__wrapper {
+  background: #fff;
+  box-shadow: 0 2px 3px rgba(25, 61, 90, 0.15);
+  border-radius: 3px;
+  margin-bottom: 30px; }
+.product__head {
+  text-align: center;
+  position: relative; }
+  @media (min-width: 992px) {
+    .product__head {
+      padding-top: 100px;
+      background: #f4f5f7;
+      border-radius: 3px 3px 0 0; }
+      .listing--featured .product__head {
+        background-color: #ffdb76;
+        border-radius: 0 3px 0 0; } }
+  @media (max-width: 991px) {
+    .product__head {
+      text-align: left; } }
+
+.card__image {
+  padding-bottom: 25px; }
+  .card__image img {
+    height: 90px;
+    width: auto;
+    margin: 0 auto; }
+  @media (max-width: 991px) {
+    .card__image {
+      float: left;
+      width: 30%;
+      padding: 15px; }
+      .card__image img {
+        height: auto;
+        max-height: 90px; } }
+  @media (max-width: 479px) {
+    .card__image {
+      float: none;
+      width: auto;
+      padding-bottom: 0; }
+      .card__image img {
+        height: 100px; } }
+.card__name {
+  position: absolute;
+  top: 25px;
+  left: 10px;
+  right: 10px; }
+  .card__name h3 {
+    font-size: 16px;
+    font-size: 1.6rem;
+    font-family: "open_sanssemibold", "Helvetica Neue", Arial, sans-serif;
+    margin-top: 0;
+    line-height: 1.4; }
+  @media (max-width: 991px) {
+    .card__name {
+      position: static;
+      padding: 15px 15px 0 30%; }
+      .card__name h3 {
+        font-size: 18px;
+        font-size: 1.8rem; } }
+  @media (max-width: 479px) {
+    .card__name {
+      padding-left: 15px;
+      text-align: center; } }
+.card__reward {
+  text-align: left;
+  background-color: #fff;
+  padding: 15px;
+  min-height: 120px;
+  -webkit-transition: height 0.1s ease-out;
+  -moz-transition: height 0.1s ease-out;
+  transition: height 0.1s ease-out; }
+  @media (max-width: 991px) {
+    .card__reward {
+      padding: 0 15px 15px 30%;
+      min-height: 0; } }
+  @media (max-width: 479px) {
+    .card__reward {
+      padding-left: 15px; } }
+  .card__reward ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0; }
+    .card__reward ul li {
+      position: relative;
+      padding: 2px 0 10px 30px; }
+      .card__reward ul li:before {
+        content: "";
+        position: absolute;
+        top: 4px;
+        border-radius: 50%;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        background: #85d28b url(/img/tick-icon@2x.png) no-repeat 4px 5px;
+        background-size: 11px 9px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); }
+.card__features {
+  border-top: 1px solid #f4f5f7;
+  border-bottom: 1px solid #f4f5f7;
+  padding: 15px; }
+  .listing--featured .card__features {
+    border-color: #e8d39c; }
+  .card__features table {
+    width: 100%; }
+  .card__features td {
+    padding: 5px 0; }
+  .card__features__title {
+    color: #818b93;
+    font-size: 12px;
+    font-size: 1.2rem;
+    width: 65%; }
+  .card__features__value {
+    width: 35%;
+    text-align: right;
+    font-size: 20px;
+    font-size: 2rem; }
+  @media (max-width: 991px) {
+    .card__features {
+      clear: left; }
+      .card__features tr {
+        display: block;
+        float: left;
+        width: 33.33%; }
+      .card__features td {
+        display: block;
+        width: 100%;
+        text-align: left; }
+        .card__features td:first-child {
+          padding-bottom: 0;
+          padding-right: 15px; }
+      .card__features__title {
+        font-size: 11px;
+        font-size: 1.1rem; } }
+  @media (max-width: 437px) {
+    .card__features__title {
+      height: 35px; } }
+.card__cta {
+  padding: 15px; }
+  .card__cta .btn-apply {
+    display: block;
+    font-family: "open_sanssemibold", "Helvetica Neue", Arial, sans-serif; }
+
+.listing--featured .product__wrapper, .listing--featured .card__reward {
+  background-color: #fbf4dd; }
+.listing--featured .label {
+  position: absolute;
+  top: -29px;
+  left: 0;
+  box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.1);
+  padding: 6px 15px 6px 26px;
+  color: #fff;
+  font-size: 12px;
+  font-size: 1.2rem;
+  border-radius: 3px 3px 0 0;
+  display: block;
+  margin-left: 0;
+  line-height: inherit; }
+  .listing--featured .label:before {
+    position: absolute;
+    content: "";
+    width: 9px;
+    height: 10px;
+    background-image: url(/img/best-arrow-icon@2x.png);
+    background-size: 9px 10px;
+    left: 10px;
+    top: 10px;
+    opacity: 0.7; }
+  .listing--featured .label--featured {
+    background-color: #EF9D3D;
+    background-image: -webkit-linear-gradient(#EF9D3D, #CE842D);
+    background-image: linear-gradient(#EF9D3D, #CE842D); }
+
+.product__opinion {
+  font-size: 13px;
+  font-size: 1.3rem;
+  color: #687179; }
+
+.cc-best__links {
+  text-align: center;
+  margin-bottom: 55px; }
+  .cc-best__links a:hover {
+    text-decoration: none; }
+    .cc-best__links a:hover .cc-best__links__thumb:before {
+      opacity: 1; }
+    .cc-best__links a:hover .cc-best__links__thumb:after {
+      -webkit-transform: translateX(-50%);
+      -moz-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+      -o-transform: translateX(-50%);
+      transform: translateX(-50%); }
+  .cc-best__links ul {
+    list-style: none;
+    padding-left: 0;
+    margin-top: 30px; }
+    .cc-best__links ul li {
+      display: inline-block;
+      margin: 0 10px 45px;
+      position: relative; }
+      @media (max-width: 991px) {
+        .cc-best__links ul li {
+          width: 33.333%;
+          margin-left: 0;
+          margin-right: 0; } }
+      @media (max-width: 479px) {
+        .cc-best__links ul li {
+          width: 50%; } }
+  .cc-best__links h4 {
+    text-transform: uppercase; }
+  .cc-best__links__thumb {
+    background: url(../img/credit-card/best/cc-best-thumbnails.jpg) no-repeat;
+    background-size: 720px 120px;
+    width: 120px;
+    height: 120px;
+    margin: 0 auto;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden; }
+    .cc-best__links__thumb:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      background: rgba(25, 61, 90, 0.3);
+      content: '';
+      opacity: 0;
+      -webkit-transition: opacity 0.1s linear;
+      -moz-transition: opacity 0.1s linear;
+      transition: opacity 0.1s linear; }
+    .cc-best__links__thumb:after {
+      position: absolute;
+      width: 18px;
+      height: 36px;
+      background: url(../img/credit-card/best/arrow-right.svg) no-repeat;
+      content: '';
+      top: 50%;
+      left: 50%;
+      margin-top: -18px;
+      -webkit-transform: translateX(-80px);
+      -moz-transform: translateX(-80px);
+      -ms-transform: translateX(-80px);
+      -o-transform: translateX(-80px);
+      transform: translateX(-80px);
+      -webkit-transition: -webkit-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      -moz-transition: -moz-transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+  .cc-best__links--shopping .cc-best__links__thumb {
+    background-position: 0 0; }
+    .cc-best__links--shopping .cc-best__links__thumb:before {
+      background-color: rgba(198, 93, 139, 0.3); }
+  .cc-best__links--shopping h4 {
+    color: #c65d8b; }
+  .cc-best__links--travel .cc-best__links__thumb {
+    background-position: -120px 0; }
+    .cc-best__links--travel .cc-best__links__thumb:before {
+      background-color: rgba(51, 183, 193, 0.3); }
+  .cc-best__links--travel h4 {
+    color: #33b7c1; }
+  .cc-best__links--petrol .cc-best__links__thumb {
+    background-position: -240px 0; }
+    .cc-best__links--petrol .cc-best__links__thumb:before {
+      background-color: rgba(236, 227, 40, 0.3); }
+  .cc-best__links--petrol h4 {
+    color: #434c55; }
+  .cc-best__links--rewards .cc-best__links__thumb {
+    background-position: -360px 0; }
+    .cc-best__links--rewards .cc-best__links__thumb:before {
+      background-color: rgba(20, 146, 123, 0.3); }
+  .cc-best__links--rewards h4 {
+    color: #14927b; }
+  .cc-best__links--cashback .cc-best__links__thumb {
+    background-position: -480px 0; }
+    .cc-best__links--cashback .cc-best__links__thumb:before {
+      background-color: rgba(80, 161, 225, 0.3); }
+  .cc-best__links--cashback h4 {
+    color: #50a1e1; }
+  .cc-best__links--dining .cc-best__links__thumb {
+    background-position: -600px 0; }
+    .cc-best__links--dining .cc-best__links__thumb:before {
+      background-color: rgba(194, 75, 75, 0.3); }
+  .cc-best__links--dining h4 {
+    color: #c24b4b; }
+
+.cc-best-shopping .cc-best__links--shopping:after,
+.cc-best-travel .cc-best__links--travel:after,
+.cc-best-petrol .cc-best__links--petrol:after,
+.cc-best-cashback .cc-best__links--cashback:after,
+.cc-best-rewards .cc-best__links--rewards:after,
+.cc-best-dining .cc-best__links--dining:after {
+  content: 'You are here';
+  position: absolute;
+  bottom: -20px;
+  text-align: center;
+  display: block;
+  font-size: 11px;
+  font-size: 1.1rem;
+  color: #708eab;
+  background: #d0dae4;
+  padding: 2px 0;
+  width: 76px;
+  left: 50%;
+  margin-left: -38px;
+  border-radius: 3px; }

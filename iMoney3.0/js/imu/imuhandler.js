@@ -22,7 +22,11 @@ var imuHandler = function (element) {
         $(element).change(function () {
             var imuTrack = new IMUTrack({
                 region: getData('region', element),
-                action: getData('action', element, ($(element).is(":checked") ? 'user-click' : 'user-unclick')),
+
+                subject: getData('subject', element, 'user'),
+                action: getData('action', element, ($(element).is(":checked") ? 'click' : 'unclick')),
+                description: getData('description', element, 'checkbox'),
+
                 vertical: getData('vertical', element),
                 value: getData('value', element, $(element).val())
             });
@@ -35,7 +39,11 @@ var imuHandler = function (element) {
         $(element).blur(function () {
             var imuTrack = new IMUTrack({
                 region: getData('region', element),
-                action: getData('action', element, 'user-input'),
+
+                subject: getData('subject', element, 'user'),
+                action: getData('action', element, 'input'),
+                description: getData('description', element, 'text'),
+
                 vertical: getData('vertical', element),
                 value: $(element).val()
             });
@@ -46,11 +54,22 @@ var imuHandler = function (element) {
 
     function handleSelect(element) {
         $(element).change(function () {
+            var value = $(element).val();
+            if(_.isArray(value)) {
+                value = value.map(function(item) {
+                    return $(element).find("option[value='" + item + "']").text();
+                }).join(',');
+            }
+
             var imuTrack = new IMUTrack({
                 region: getData('region', element),
-                action: getData('action', element, 'user-input'),
+                
+                subject: getData('subject', element, 'user'),
+                action: getData('action', element, 'input'),
+                description: getData('description', element, 'select'),
+
                 vertical: getData('vertical', element),
-                value: $(element).val()
+                value: value
             });
 
             userManager.track(imuTrack);
@@ -61,7 +80,11 @@ var imuHandler = function (element) {
         $(element).click(function () {
             var imuTrack = new IMUTrack({
                 region: getData('region', element),
-                action: getData('action', element, 'user-click'),
+
+                subject: getData('subject', element, 'user'),
+                action: getData('action', element, 'click'),
+                description: getData('description', element, 'button'),
+
                 vertical: getData('vertical', element, guessVertical($(element).text())),
                 value: getData('value', element, $(element).text().trim())
             });
@@ -74,7 +97,11 @@ var imuHandler = function (element) {
         $(element).click(function () {
             var imuTrack = new IMUTrack({
                 region: getData('region', element),
-                action: getData('action', element, 'user-submit'),
+
+                subject: getData('subject', element, 'user'),
+                action: getData('action', element, 'submit'),
+                description: getData('description', element, 'submit'),
+
                 vertical: getData('vertical', element, guessVertical($(element).text())),
                 value: getData('value', element, $(element).text())
             });
@@ -92,7 +119,7 @@ var imuHandler = function (element) {
         var parents = $(element).parents('*[data-' + dataAttr + ']');
         if (parents.length) return $(parents[0]).data(dataAttr);
 
-        return defaultData;
+        return defaultData.charAt(0).toUpperCase() + defaultData.slice(1);
     }
 
     function guessVertical(text) {

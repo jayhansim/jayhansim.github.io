@@ -10,11 +10,11 @@
 		<meta name="description" content="Compare and apply online for the best credit cards in Malaysia that fits your lifestyle and gives you the best benefits. Top 10 credit cards update every day." />
 		<meta name="keywords" content="imoney, financial services, malaysia, comparison, housing loans, personal loans, credit cards, car insurance online" />
 
-		<title>The Best Malaysian Credit Cards | iMoney</title>
-		
-		<link rel="stylesheet" href="/css/base-critical.css">
+		<title>Best Travel Credit Cards in Malaysia | iMoney</title>
 
-		
+		<link rel="stylesheet" href="../../css/base-critical.css">
+
+
 
 			<script>
 			//Start Classic Google Analytics
@@ -104,7 +104,7 @@
 		<!--[if lte IE 9]>
 		<script src="/js/plugins/respond.min.js"></script>
 		<![endif]-->
-		
+
 <script>
     iAJSLoader.init([
         [
@@ -112,7 +112,7 @@
             "//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"
         ],
         [
-            "/js/cc-top10.min.js",
+            "/js/cc-best.min.js",
             "/js/base.min.js"
         ]
     ]);
@@ -124,18 +124,18 @@
     <meta property="og:site_name" content="iMoney Malaysia" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.imoney.my/credit-card/top-10-credit-cards" />
-    <meta property="og:title" content="The Best Malaysian Credit Cards" />
+    <meta property="og:title" content="Best Travel Credit Cards in Malaysia" />
     <meta property="og:description" content="Compare and apply online for the best credit cards in Malaysia that fits your lifestyle and gives you the best benefits. Top 10 credit cards update every day." />
     <meta property="og:image" content="/img/og/cc-top-10.png" />
 
 		<link rel="shortcut icon" href="//www.imoney.my/sites/default/files/logo_small.png" />
 		<link rel="canonical" href="https://www.imoney.my/credit-card/top-10-credit-cards" />
 	</head>
-	<body class="cc-top10">
+	<body class="cc-best-shopping">
 		<!-- Start Google Tag Manager -->
 		<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-KTF5WP" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<!-- End Google Tag Manager -->
-		
+
 <div id="top" class="top" data-region="top-bar" data-imu-track="a">
     <div class="container">
         <a data-action="user-click-imoney-logo" href="/" class="top__logo hide-text">iMoney.my</a>
@@ -275,7 +275,7 @@
 			    <li><a href="/credit-card/" data-region="CC Sub-Navigation">All Cards</a></li>
 			    <li><a href="/credit-card/search/" data-region="CC Sub-Navigation">Credit Card SmartSearch</a></li>
 			    <li class="nav--cc-top10"><a href="/credit-card/top-10-credit-cards" data-region="CC Sub-Navigation">Top 10 Cards</a></li>
-			    <!-- <li class="navbar--sub__sub">
+			    <li class="navbar--sub__sub">
 			    	<a href="#" id="cc-best" class="navbar--sub__sub--dropdown" data-region="CC Sub-Navigation">Best Cards for <span style="font-size:60%; position: relative; top: -2px;">&#9660;</span></a>
 
 			    	<ul class="navbar--sub__sub--menu">
@@ -286,7 +286,7 @@
 			    		<li class="navbar--sub__cashback"><a href="/credit-card/cashback-credit-cards/"><span class="visible-xs">Best</span> Cashback <span class="visible-xs">Cards</span></a></li>
 			    		<li class="navbar--sub__dining"><a href="/credit-card/dining-credit-cards/"><span class="visible-xs">Best</span> Dining <span class="visible-xs">Cards</span></a></li>
 			    	</ul>
-			    </li> -->
+			    </li>
 		    </ul>
 			</div>
 		</div>
@@ -303,55 +303,38 @@ The dymanic replacement starts
     </script>
 
     <script type="text/template" id="credit-card-listing-template">
-    	<% _.each(cards, function(card) { %>
-            <li class= "<%= card.status == 'Promo' ? 'listing--featured' : '' %>">
-                <div class="chart__rank">
-                    <h3><%= card.currRank %><span class="rank <%= card.arrow %>">
-                        <%= card.sign %>
-                    </span></h3>
-                    <% if (card.prevRank == 404)  { %>
-                        <p class="rank__prev rank__prev--new"><span class="rank__prevpos">New!</span></p>
-                    <% } else { %>
-                        <p class="rank__prev">Prev: <span class="rank__prevpos"><%=  card.prevRank %></span></p>
-                    <% } %>
-                </div>
-                <div class="chart__product--image">
-                    <img src="<%= card.image %>" alt="<%= card.name %>">
-                </div>
-                <div class="chart__product--detail">
-                    <h4 class="product__name"><a href="<%= card.link %>"><%= card.name %></a></h4>
-                    <% if (card.status == 'Promo')  { %>
-                        <span class="label label--featured">Featured</span>
-                    <% } %>
-                    <p class="product__desc"><%= card.feature %></p>
-                </div>
-                <div class="chart__cta">
-                    <a href="<%= card.applyUrl %>" target="_blank" data-value="Apply for <%= card.name %>" class="btn btn-apply btn-lg">Apply Now</a>
-                </div>
-            </li>
-    	<% }); %>
+	<% _.each(cards, function(card) { %>
+        <li class="listing--featured">
+            <div class="chart__rank">
+                <h3><%= card.currRank %><span class="rank rank--up">&#9650;</span></h3>
+                <p class="rank__prev">Prev: <span class="rank__prevpos"><%= card.prevRank %></span></p>
+            </div>
+            <div class="chart__product--image">
+                <img src="<%= card.image %>" alt="<%= card.name %>">
+            </div>
+            <div class="chart__product--detail">
+                <h4 class="product__name"><a href="#"><%= card.name %></a></h4> <span class="label label--featured">Featured</span>
+                <p class="product__desc"><%= card.feature %></p>
+            </div>
+            <div class="chart__cta">
+                <a href="<%= card.applyUrl %>" target="_blank" data-value="Apply for <%= card.name %>" class="btn btn-apply btn-lg">Apply Now</a>
+            </div>
+        </li>
+	<% }); %>
 	</script>
 
 <!--
 The dymanic replacement ends
 -->
 		<!-- Header -->
-		<header role="banner" class="header header--page header--top10">
+		<header role="banner" class="header header--page" data-speed="5">
 
 			<div class="container">
-				<h1 class="header__title">Top 10 <span class="header__title--highlight">credit cards</span> on iMoney.my</h1>
-				<p class="header__description">Here are the most popular credit cards on iMoney</p>
+				<h1 class="header__title">Best <strong>Shopping</strong> Credit Cards in Malaysia</h1>
+				<div class="header__bestpoints">
+           <span class="header__bestpoints__point">High weekend discounts</span> <span class="header__bestpoints__point">Great shopping rewards</span> <span class="header__bestpoints__point">Spend more, earn more</span>
+        </div>
 			</div>
-
-			<!-- cards and trophy -->
-			<div class="glow-wrapper">
-				<span class="glow"></span>
-			</div>
-			<span class="deco deco--card1"></span>
-			<span class="deco deco--card2"></span>
-			<span class="deco deco--card3"></span>
-			<span class="deco deco--card4"></span>
-			<span class="deco deco--trophy"></span>
 
 		</header>
 		<!-- Main Content Area -->
@@ -362,40 +345,225 @@ The dymanic replacement ends
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-12">
-						<div class="listing listing--chart">
-							<div class="listing__header">
-								<p class="listing__info--small">Updated every 24 hours</p>
-							</div>
-                            <div class="listing__preloader">
-                                <div class="preloader" id="preloader">
-                                </div>Finding cards
-                            </div>
+						<div class="listing listing__cc-best">
 							<div class="listing__body">
+                <ul class="listing__items clearfix">
 
-                                <ol class="listing__items listing__items--table listing__items--ol" id="cards-listing">
+                  <!-- #1 -->
+                  <li class="listing--featured">
+                    <div class="product__wrapper">
+                      <div class="product__head">
+                        <div class="card__image">
+                          <img src="https://www.imoney.my/sites/default/files/maybankard-2-gold-card.png" class="img-responsive" alt="Credit Card Name">
+                        </div>
+                        <div class="card__name">
+                          <h3><a href="#">Maybank 2 Cards</a></h3>
+                        </div>
+                        <span class="label label--featured">Featured</span>
+                        <div class="card__reward">
+                          <ul class="card__reward__list">
+                            <li>5x TreatsPoints for all spend on your Maybankard 2 Amex Card</li>
+                            <li>5% weekend cashback</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__body">
+                        <div class="card__features">
+                          <table>
+                            <tr>
+                              <td class="card__features__title">Interest Rate (p.a)</td>
+                              <td class="card__features__value">8.88%</td>
+                            </tr>
+                            <tr>
+                              <td class="card__features__title">Balance Transfer (p.a)</td>
+                              <td class="card__features__value">0%</td>
+                            </tr>
+                            <tr>
+                              <td class="card__features__title">Annual Fee</td>
+                              <td class="card__features__value">RM0</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="card__cta">
+                          <a href="#" class="btn btn-apply btn-lg">Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
 
-                                </ol>
-                            </div>
-                            </div>
+                    <div class="product__opinion">
+                      <h5>iMoney's opinion</h5>
+                      <p>Maybank 2 go card is a card that you should use if you shop a lot particualrly on the weekends blah blah blah.</p>
 
-						<div class="share share--bottom share--top10"  data-imu-track="a"
-                                    data-subject="User"
-                                    data-action="Click"
-                                    data-description="Share"
-                                    data-region="Top 10 Sharing"
-                                    data-vertical = "Credit Card">
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+
+                  </li>
+
+                  <!-- #2 -->
+                  <li>
+                    <div class="product__wrapper">
+                      <div class="product__head">
+                        <div class="card__image">
+                          <img src="https://www.imoney.my/sites/default/files/sc-gold-cashback-mastercard_0.png" class="img-responsive" alt="Credit Card Name">
+                        </div>
+                        <div class="card__name">
+                          <h3><a href="#">Standard Chartered Gold CashBack Master Card</a></h3>
+                        </div>
+                        <div class="card__reward">
+                          <ul class="card__reward__list">
+                            <li>5% cashback on all retail spending for every RM1 spent</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__body">
+                        <div class="card__features">
+                          <table>
+                            <tr>
+                              <td class="card__features__title">Interest Rate (p.a)</td>
+                              <td class="card__features__value">15%</td>
+                            </tr>
+                            <tr>
+                              <td class="card__features__title">Balance Transfer (p.a)</td>
+                              <td class="card__features__value">1.99%</td>
+                            </tr>
+                            <tr>
+                              <td class="card__features__title">Annual Fee</td>
+                              <td class="card__features__value">RM175</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="card__cta">
+                          <a href="#" class="btn btn-apply btn-lg">Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product__opinion">
+                      <h5>iMoney's opinion</h5>
+                      <p>Maybank 2 go card is a card that you should use if you shop a lot particualrly on the weekends blah blah blah.</p>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </li>
+
+                  <!-- #3 -->
+                  <li>
+                    <div class="product__wrapper">
+                      <div class="product__head">
+                        <div class="card__image">
+                          <img src="https://www.imoney.my/sites/default/files/Cimb_cash_rebate_gold.png" class="img-responsive" alt="Credit Card Name">
+                        </div>
+                        <div class="card__name">
+                          <h3><a href="#">CIMB Bank Cash Rebate Gold MasterCard</a></h3>
+                        </div>
+                        <div class="card__reward">
+                          <ul class="card__reward__list">
+                            <li>2% cashback on all retail spent</li>
+                            <li>2% off airline tickets purchased online</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__body">
+                        <div class="card__features">
+                          <table>
+                            <tr>
+                              <td class="card__features__title">Interest Rate (p.a)</td>
+                              <td class="card__features__value">15%</td>
+                            </tr>
+                            <tr>
+                              <td class="card__features__title">Balance Transfer (p.a)</td>
+                              <td class="card__features__value">5.99%</td>
+                            </tr>
+                            <tr>
+                              <td class="card__features__title">Annual Fee</td>
+                              <td class="card__features__value">RM0%</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="card__cta">
+                          <a href="#" class="btn btn-apply btn-lg">Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product__opinion">
+                      <h5>iMoney's opinion</h5>
+                      <p>Maybank 2 go card is a card that you should use if you shop a lot particualrly on the weekends blah blah blah.</p>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </li>
+
+                  <!-- #4 -->
+                  <li>
+                    <div class="product__wrapper">
+                      <div class="product__head">
+                        <div class="card__image">
+                          <img src="https://www.imoney.my/sites/default/files/citibank-clear-credit-card_1.png" class="img-responsive" alt="Credit Card Name">
+                        </div>
+                        <div class="card__name">
+                          <h3><a href="#">Citibank Clear Credit Card</a></h3>
+                        </div>
+                        <div class="card__reward">
+                          <ul class="card__reward__list">
+                            <li>1x Rewards points with every RM1 spent</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="product__body">
+                        <div class="card__features">
+                          <table>
+                            <tr>
+                              <td class="card__features__title">Interest Rate (p.a)</td>
+                              <td class="card__features__value">8.88%</td>
+                            </tr>
+                            <tr>
+                              <td class="card__features__title">Balance Transfer (p.a)</td>
+                              <td class="card__features__value">0%</td>
+                            </tr>
+                            <tr>
+                              <td class="card__features__title">Annual Fee</td>
+                              <td class="card__features__value">RM90</td>
+                            </tr>
+                          </table>
+                        </div>
+                        <div class="card__cta">
+                          <a href="#" class="btn btn-apply btn-lg">Apply Now</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="product__opinion">
+                      <h5>iMoney's opinion</h5>
+                      <p>Maybank 2 go card is a card that you should use if you shop a lot particualrly on the weekends blah blah blah.</p>
+
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                      </p>
+                    </div>
+                  </li>
+
+
+                </ul>
+              </div>
+            </div>
+
+            <!-- Social sharing -->
+						<div class="share share--bottom">
 							<h5><span>Share this list with your friends</span></h5>
 							<!-- Facebook Twitter Google+-->
 							<ul class="share__list">
 								<li>
-									<a href="http://www.facebook.com/sharer/sharer.php?u=https://www.imoney.my/credit-card/top-10-credit-cards" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="share__fb" data-value = "Facebook">
+									<a href="http://www.facebook.com/sharer/sharer.php?u=https://www.imoney.my/credit-card/top-10-credit-cards" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="share__fb">
 										<svg x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" xmlns:xlink="http://www.w3.org/1999/xlink">
 							            <path d="M15,4.95578947 L15,2 L12.16,2 C9.8,2 8.04,3.89473684 8.04,6.24421053 L8.04,7.87368421 L5,7.87368421 L5,10.6778947 L8.04,10.6778947 L8.04,19.0526316 L11.44,19.0526316 L11.44,10.6778947 L15,10.6778947 L15,7.87368421 L11.44,7.87368421 L11.44,5.94105263 C11.44,5.37263158 11.8,4.95578947 12.16,4.95578947 L15,4.95578947 Z" sketch:type="MSShapeGroup"></path>
 										</svg>
 									</a>
 								</li>
 								<li>
-									<a href="https://twitter.com/share?text=Check+out+the+TOP+10+credit+cards+on+iMoney.my!&via=iMoneyMY&url=https://www.imoney.my/credit-card/top-10-credit-cards" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="share__tw" data-value = "Twitter">
+									<a href="https://twitter.com/share?text=Check+out+the+TOP+10+credit+cards+on+iMoney.my!&via=iMoneyMY&url=https://www.imoney.my/credit-card/top-10-credit-cards" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="share__tw">
 										<svg version="1.1" id="Twitter" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 											 viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
 										<path d="M17.316,6.246c0.008,0.162,0.011,0.326,0.011,0.488c0,4.99-3.797,10.742-10.74,10.742c-2.133,0-4.116-0.625-5.787-1.697
@@ -409,7 +577,7 @@ The dymanic replacement ends
 									</a>
 								</li>
 								<li>
-									<a href="https://plus.google.com/share?url=https://www.imoney.my/credit-card/top-10-credit-cards" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="share__gplus" data-value = "Google">
+									<a href="https://plus.google.com/share?url=https://www.imoney.my/credit-card/top-10-credit-cards" onclick="javascript:window.open(this.href, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=600,width=600');return false;" class="share__gplus">
 										<svg version="1.1" id="Google_x2B_" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
 											<path d="M1.989,5.589c0,1.494,0.499,2.572,1.482,3.205c0.806,0.52,1.74,0.598,2.226,0.598c0.118,0,0.213-0.006,0.279-0.01
 												c0,0-0.154,1.004,0.59,1.996H6.532c-1.289,0-5.493,0.269-5.493,3.727c0,3.516,3.861,3.695,4.636,3.695
@@ -427,80 +595,96 @@ The dymanic replacement ends
 								</li>
 							</ul>
 						</div>
+
+      <!-- CC Best Bottom Links -->
+  		<div class="cc-best__links">
+        <h3>Not enough? Here are more best credit cards for:</h3>
+        <ul>
+          <li class="cc-best__links--shopping">
+            <a href="#">
+              <div class="cc-best__links__thumb"></div>
+              <h4 class="h5">Shopping</h4>
+            </a>
+          </li><!--
+          --><li class="cc-best__links--travel">
+            <a href="#">
+              <div class="cc-best__links__thumb"></div>
+              <h4 class="h5">Travel</h4>
+            </a>
+          </li><!--
+          --><li class="cc-best__links--petrol">
+            <a href="#">
+              <div class="cc-best__links__thumb"></div>
+              <h4 class="h5">Petrol</h4>
+            </a>
+          </li><!--
+          --><li class="cc-best__links--rewards">
+            <a href="#">
+              <div class="cc-best__links__thumb"></div>
+              <h4 class="h5">Rewards</h4>
+            </a>
+          </li><!--
+          --><li class="cc-best__links--cashback">
+            <a href="#">
+              <div class="cc-best__links__thumb"></div>
+              <h4 class="h5">Cashback</h4>
+            </a>
+          </li><!--
+          --><li class="cc-best__links--dining">
+            <a href="#">
+              <div class="cc-best__links__thumb"></div>
+              <h4 class="h5">Dining</h4>
+            </a>
+          </li>
+        </ul>
+      </div>
+
 					</div>
+          <!-- /col -->
 				</div>
+        <!-- /row -->
 			</div>
+      <!-- /container -->
 		</section>
 
+      <!-- Bottom CTA -->
+  		<section id="cta-bottom" class="home__cta--bottom section--darkblue">
 
+  			<!-- second-cta -->
+  			<div class="home__cta--bottom__container" data-region="home bottom" data-imu-track="select, button, a" data-vertical="credit card">
+  				<div class="container">
+  					<div class="row">
+  						<div class="col-md-12">
+  							<h3 class="home__section__title">Still having trouble finding a credit card? Try <span class="color-complement">SmartSearch</span>.</h3>
+  							<form id="form-cc-bottom" class="form-inline" action="/credit-card/search/" method="get">
+  								<div class="form-group">
+  									<select name="purpose" id="purpose-bottom" class="form-control input-lg" tabindex="-1">
+  										<option value="" selected disabled>Tell us what you're looking for:</option>
+  										<option value="better benefits">I want better benefits</option>
+  										<option value="lower interest">I want a lower interest card</option>
+  										<option value="second credit card">I need a second credit card</option>
+  										<option value="looking around for deals">I'm looking for good deals</option>
+  										<option value="first credit card">This is my first credit card</option>
+  										<option value="balance transfer">I want a balance transfer</option>
+  									</select>
+  								</div><!--
+  								--><div class="form-group">
+  									<button type="submit" class="btn btn-complement btn-complement--gradient btn-lg btn-block" disabled="disabled">Start</button>
+  								</div>
+  							</form>
 
+  							<div class="cta__bottom__options">
+  								<ul>
+  									<li><i class="icon-compareall"></i><a href="/credit-card">Compare all</a></li>
+  									<li><i class="icon-callme"></i><a data-action="user-call-imoney" href="tel:0321065434">Call: 03 21065434</a></li>
+  								</ul>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-		<!-- Bottom CTA -->
-		<section id="cta-bottom" class="home__cta--bottom section--darkblue">
-
-			<!-- second-cta -->
-			<div class="home__cta--bottom__container" data-imu-track="select, button, a"  data-subject="User" data-region="Top 10 Content Bottom" data-vertical="Credit Card">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-12">
-							<h3 class="home__section__title">Still having trouble finding a credit card? Try <span class="color-complement">SmartSearch</span>.</h3>
-							<form id="form-cc-bottom" class="form-inline" action="/credit-card/search/" method="get">
-								<div class="form-group" data-action="Input">
-									<select name="purpose" id="purpose-bottom" class="form-control input-lg" tabindex="-1" data-description = "What are you looking for?">
-										<option value="" selected disabled>Tell us what you're looking for:</option>
-										<option value="better benefits">I want better benefits</option>
-										<option value="lower interest">I want a lower interest card</option>
-										<option value="second credit card">I need a second credit card</option>
-										<option value="looking around for deals">I'm looking for good deals</option>
-										<option value="first credit card">This is my first credit card</option>
-										<option value="balance transfer">I want a balance transfer</option>
-									</select>
-								</div><!--
-								--><div class="form-group" data-action="Submit" data-description = "Form" data-value="SmartSearch">
-									<button type="submit" class="btn btn-complement btn-complement--gradient btn-lg btn-block" disabled="disabled">Start</button>
-								</div>
-							</form>
-
-							<div class="cta__bottom__options">
-								<ul>
-									<li>
-                                        <i class="icon-compareall"></i>
-                                            <a href="/credit-card" data-action="Click" data-description = "Link">Compare all</a>
-                                        </li>
-									<li>
-                                        <i class="icon-callme"></i>
-                                            <a data-action="Call" data-description = "Link" data-value ="tel:0321065434" href="tel:0321065434">Call: 03 21065434</a>
-                                        </li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section>
+  			</div>
+  		</section>
 
 		</div>
 
@@ -517,7 +701,7 @@ The dymanic replacement ends
 							<li><a href="/credit-card/rewards-credit-cards/">Best Rewards Credit Cards</a></li>
 							<li><a href="/credit-card/cashback-credit-cards/">Best Cash Back Credit Cards</a></li>
 							<li><a href="/credit-card/travel-credit-cards/">Best Travel Cards</a></li>
-							
+
 						</ul>
 					</div>
 					<div class="col-md-3 col-sm-5 footer__top__col">
@@ -583,15 +767,15 @@ The dymanic replacement ends
 				</div>
 			</div>
 		</footer>
-		<link rel="stylesheet" href="/css/cc-top10.css">
+		<link rel="stylesheet" href="../../css/cc-top10.css">
+    <link rel="stylesheet" href="../../css/cc-best.css">
 
-		
+
 <!--[if lte IE 9]>
 		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 		<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js"></script>
-		<script src="/js/cc-top10.min.js"></script>
+		<script src="/js/cc-best.min.js"></script>
 		<script src="/js/base.min.js"></script>
-		<script src="//cdn.optimizely.com/js/2356000143.js"></script>
 <![endif]-->
 
 		<script>

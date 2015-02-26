@@ -94,8 +94,18 @@ var JAPP = {
         var params = getUserData();
         params['campaign_id'] = this.config.servers.get_default().campaigns.smart_search_2;
         params['product_name'] = product.name;
+        params['referrer_submission_id'] = params.referrer;
         params['nid'] = product.nid;
+        submitToJapp(params, callback, callback_params);
 
+        return false;
+    },
+    createSubmissionWithProductBroadband: function(product, callback, callback_params) {
+        var params = getUserData();
+        params['campaign_id'] = this.config.servers.get_default().campaigns.smart_search_2_bb;
+        params['product_name'] = product.name;
+        params['referrer_submission_id'] = params.referrer;
+        params['nid'] = product.nid;
         submitToJapp(params, callback, callback_params);
 
         return false;
@@ -167,12 +177,17 @@ function submitToJapp(params, callback, callback_params) {
     }
 
     jQuery.ajax({
+        async: false,
         type: "POST",
         url: JAPP.config.servers.get_default().url,
         data: data,
         dataType: 'jsonp',
         beforeSend: function () {
             if(typeof callback == 'function') callback(null, 'beforeSend', params, callback_params);
+        },
+        success:function(data) {
+            var myValue = data.data.$id;
+            $("#referrer").attr("value",myValue);
         }
     }).complete(function () {
         if(typeof callback == 'function') callback(null, 'complete', params, callback_params);
