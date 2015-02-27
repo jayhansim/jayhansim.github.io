@@ -27,6 +27,13 @@
   box-shadow: inset 0 -2px 0 #2c96b8;
   font-family: "open_sansbold", "Helvetica Neue", Arial, sans-serif; }
 
+h1, h2, h3, h4, h5, h6 {
+  -moz-font-feature-settings: "liga=1, dlig=1";
+  -ms-font-feature-settings: "liga", "dlig";
+  -webkit-font-feature-settings: "liga", "dlig";
+  -o-font-feature-settings: "liga", "dlig";
+  font-feature-settings: "liga", "dlig"; }
+
 .header--page {
   /* overwrites */ }
   [class*="cc-best-"] .header--page {
@@ -51,7 +58,7 @@
     background-color: #14927b; }
   .cc-best-cashback .header--page {
     background-image: url(../img/credit-card/best/header-cc-cashback.jpg);
-    background-color: #50a1e1; }
+    background-color: #0371af; }
   .cc-best-dining .header--page {
     background-image: url(../img/credit-card/best/header-cc-dining.jpg);
     background-color: #c24b4b; }
@@ -80,7 +87,7 @@
     .cc-best-rewards .header__bestpoints__point {
       background-color: #14927b; }
     .cc-best-cashback .header__bestpoints__point {
-      background-color: #50a1e1; }
+      background-color: #0371af; }
     .cc-best-dining .header__bestpoints__point {
       background-color: #c24b4b; }
 
@@ -287,6 +294,11 @@
 .cc-best__links {
   text-align: center;
   margin-bottom: 55px; }
+  .cc-best__links h3 {
+    line-height: 1.25; }
+    @media (max-width: 479px) {
+      .cc-best__links h3 br {
+        display: none; } }
   .cc-best__links a:hover {
     text-decoration: none; }
     .cc-best__links a:hover .cc-best__links__thumb:before {
@@ -381,9 +393,9 @@
   .cc-best__links--cashback .cc-best__links__thumb {
     background-position: -480px 0; }
     .cc-best__links--cashback .cc-best__links__thumb:before {
-      background-color: rgba(80, 161, 225, 0.3); }
+      background-color: rgba(3, 113, 175, 0.3); }
   .cc-best__links--cashback h4 {
-    color: #50a1e1; }
+    color: #0371af; }
   .cc-best__links--dining .cc-best__links__thumb {
     background-position: -600px 0; }
     .cc-best__links--dining .cc-best__links__thumb:before {
