@@ -55,13 +55,20 @@ $(function(){
 			e.preventDefault();
 			var elem = $($(this).data('target'));
 			elem.toggleClass('in');
+			elem.fadeIn();
 			if(elem.hasClass('in')){
+				// elem.fadeIn();
+				elem.removeClass('out');
 				$body.addClass('mdl-body');
 				// $body.append('<div class="modal-backdrop  in"></div>');
 				setTimeout(function(){
 					elem.addClass('animate-menu');	
 				},100);
 			}else{
+				// elem.fadeOut();
+				elem.addClass('out').delay(500).queue(function(){
+					$(this).removeClass('out').dequeue();
+				});
 				elem.removeClass('animate-menu');
 				// $('.modal-backdrop.in').remove();
 				$body.removeClass('mdl-body');
@@ -77,6 +84,9 @@ $(function(){
 					digiMenu.removeClass('in');
 					// $('.modal-backdrop').remove();
 					$body.removeClass('mdl-body');
+					digiMenu.addClass('out').delay(500).queue(function(){
+						$(this).removeClass('out').dequeue();
+					});
 				}
 			});
 		}
