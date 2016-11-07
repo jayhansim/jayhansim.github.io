@@ -84,7 +84,7 @@ $(function(){
 					digiMenu.removeClass('in');
 					// $('.modal-backdrop').remove();
 					$body.removeClass('mdl-body');
-					digiMenu.addClass('out').delay(500).queue(function(){
+					digiMenu.addClass('out').queue(function(){
 						$(this).removeClass('out').dequeue();
 					});
 				}
