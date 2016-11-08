@@ -66,7 +66,7 @@ $(function(){
 				},100);
 			}else{
 				// elem.fadeOut();
-				elem.addClass('out').delay(500).queue(function(){
+				elem.addClass('out').delay(200).queue(function(){
 					$(this).removeClass('out').dequeue();
 				});
 				elem.removeClass('animate-menu');
@@ -84,7 +84,7 @@ $(function(){
 					digiMenu.removeClass('in');
 					// $('.modal-backdrop').remove();
 					$body.removeClass('mdl-body');
-					digiMenu.addClass('out').queue(function(){
+					digiMenu.addClass('out').delay(200).queue(function(){
 						$(this).removeClass('out').dequeue();
 					});
 				}
