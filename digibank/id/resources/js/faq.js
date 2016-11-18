@@ -6,10 +6,13 @@ $(function(){
 
     $.clientSearchInit("#searchBox",".inside-content-box");
 
-    $('#faqSearch').on('click',function(){
-        window.location='faq-search-results.html?search='+$('#searchBox').val()+'';
-        e.preventDefault();
-    });
+
+    if(!$.QueryString('app')) {
+        $('#faqSearch').on('click',function(){
+            window.location='faq-search-results.html?search='+$('#searchBox').val()+'';
+            e.preventDefault();
+        });
+    };
 
     
     

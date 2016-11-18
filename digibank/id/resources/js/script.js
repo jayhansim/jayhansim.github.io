@@ -44,7 +44,6 @@ $(function(){
 		};
 	};
 
-
 	$('#headerMenu').load(headerPage,function(){
 		var digiMenu = $('#digiMenu');
 		checkPage();
@@ -97,6 +96,7 @@ $(function(){
 			$('.navbar-header .navbar-brand').addClass('navbar-brand-white');
 		}
 	});
+
 	//enable Chat
 	$('#kasistoChat').load("components/chat.html",function(){
 		$(this).removeClass('hide');
@@ -1110,7 +1110,7 @@ $(function(){
 	}
 
 
-	//
+	// jQuery Inview
 
 	$('.screenVA, .screenPFM, .screenSoftToken, .dePhone, .safetyPhone').css('opacity','0');
 
@@ -1149,6 +1149,12 @@ $(function(){
 			}
 		});
 	};
+
+
+	// Webview
+	if($.QueryString('app')) {
+		$('body').addClass('webview');
+	}
 	
 	
 }(jQuery));
