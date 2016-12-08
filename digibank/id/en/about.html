@@ -15,164 +15,19 @@
     <link rel="icon" href="../resources/images/dbs-fav.ico" type="image/x-icon">
     <title>digibank, About Us | DBS Bank Indonesia</title>
     <link rel="stylesheet" href="../resources/css/base.css"><!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KNQGQL');</script><!-- End Google Tag Manager --><!-- SiteCatalyst code version: H.13. Copyright 1997-2007 Omniture, Inc. More info available at http://www.omniture.com [1] -->
-    <script src="/id/iwov-resources/js/s_code.js" language="JavaScript"></script>
-    <script src="/id/iwov-resources/js/site-catalyst.js"  language="JavaScript"></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KNQGQL');</script><!-- End Google Tag Manager -->
+    <!-- Google Analytic -->
     <script>
-      <!-- /* You may give each page an identifying name, server, and channel on the next lines. */
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       
-      s.pageName=""
-      s.server=""
-      s.channel=""
-      s.pageType=""
-      s.prop1=""
-      s.prop2=""
-      s.prop3=""
-      s.prop4=""
-      s.prop5=""
-      /* Conversion Variables */
-      s.campaign=""
-      s.state=""
-      s.zip=""
-      s.events=""
-      s.products=""
-      s.purchaseID=""
-      s.eVar1=""
-      s.eVar2=""
-      s.eVar3=""
-      s.eVar4=""
-      s.eVar5=""
-      s.eVar8=""
-      
-      /* Hierarchy Variables */
-      
-      s.hier1=""
-      
-      /*********X6 Country SiteCatalyst Code Start here*********/
-      /********* Tab content and Article tracking sCode variable*********/
-      s.prop22=""
-      s.prop28=""
-      /*********Search Result Component Tracking*********/
-      s.prop23=""
-      if($("#scprop23").length > 0 && $("#scprop23").text().trim() != "")
-        {
-            var prop23var = $("#scprop23").text().trim();
-      prop23var = prop23var.substring(prop23var.indexOf("=") + 1);
-      s.prop23=prop23var
-      }
-      /*********Product info Component Tabs*********/
-      var urlPathName = window.location.pathname;
-      var level_name = urlPathName.match(/\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*))\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*)).page/);
-      if(level_name != null)
-      {           
-          level_name = level_name[1];
-          var tab_var_productInfo = $(".sub-nav-ul.productInfo li.active").text();
-          if(tab_var_productInfo != "")
-          {
-              s.prop22=level_name + "|" + tab_var_productInfo
-          }
-      }
-      /*********Tabbed Content Component Tabs &  Article browser component Tabs*********/
-      if($(".tabbed-content .tabbed-nav.tabs li.active").text() != "")
-      {
-          
-          var TabbedContentActive = $(".tabbed-content .tabbed-nav.tabs li.active:first").text();
-          if($(".article-browser .tabbed-nav.article li.active").text() != "")
-          {
-            var articleTabbedContent = $(".article-browser .tabbed-nav.article li.active:first").text();
-            s.prop22 = TabbedContentActive + ":" +  articleTabbedContent
-          }else{
-            s.prop22 = TabbedContentActive
-          }
-      }else if($(".article-browser .tabbed-nav.article li.active:first").text() != "")
-      {
-            
-            var articleTabbed = $(".article-browser .tabbed-nav.article li.active:first").text();
-            s.prop22 = articleTabbed
-      }
-          
-      /*********Article Discovery Block Component Tabs*********/
-      if($('.article-discovery-block .article li.active').data('category') != null)
-      {
-          var urlPathName = window.location.pathname;     
-          var level_name = urlPathName.match(/\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*))\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*)).page/);
-          if(level_name != null)
-          {           
-              level_name = level_name[1];
-              var activeTabbedContent = $('.article-discovery-block .tabbed-nav.article li.active:first').text();
-              s.prop22=level_name + "|" + activeTabbedContent
-          }
-      }
-      
-      /*********Article detail page - ArticleSummary component*********/
-      if($(".article-summary").length > 0)
-      {
-          var urlHref = window.location.href;
-          var urlPathName = window.location.pathname;
-          var country_Name = "";
-          var segment_Name = "";
-          var country_segment_other = urlHref.match(/\.com\.((\w+))\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*))\//);
-          if( country_segment_other != null && country_segment_other != "")
-          {
-              country_Name = country_segment_other[1];
-              segment_Name = country_segment_other[3];
-          //For IN & ID country
-          }else{ 
-          var country_segment = urlPathName.match(/^\/((\w+))\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*))\//);
-          if( country_segment != null && country_segment != "")
-          {       
-              country_Name = country_segment[1];
-              segment_Name = country_segment[3];
-          }
-          }
-          if(segment_Name.indexOf('treasures-private-client') != -1)
-          {       
-              segment_Name = 'tpc';
-          }else if(segment_Name.indexOf('private-banking') != -1)
-          {       
-              segment_Name = 'private-bank';
-          }else if(segment_Name.indexOf('personal') != -1)
-          {       
-              segment_Name = 'personal';
-          }else if(segment_Name.indexOf('treasures') != -1)
-          {       
-              segment_Name = 'treasures';
-          }
-          s.prop28=country_Name+ ":" + segment_Name + ":"  + $('.article-summary h1').text()
-      }
-      
-      /*********X6 Country SiteCatalyst Code End here*********/
-      /* Form Variables */
-      var urlPathName = window.location.pathname;
-      if(urlPathName.indexOf('dbs-forms/account-opening-wealth') > -1)
-      {
-        s.eVar8 = 'id:treasures:account opening form';
-        s.events='event1';
-      } else if(urlPathName.indexOf('dbs-forms/contact-me-wealth') > -1)
-      {
-        s.eVar8 = 'id:treasures:contact me form';
-        s.events='event1';
-      } else if(urlPathName.indexOf('dbs-forms/eappointment-wealth') > -1)
-      {
-        s.eVar8 = 'id:treasures:eappointment form';
-        s.events='event1';
-      } else {
-        s.eVar8 = "";
-        s.events= "";
-      }
+      ga('create', 'UA-87925627-1', 'auto');
+      ga('send', 'pageview');
       
       
-      
-      /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-      
-      var s_code=s.t();if(s_code)document.write(s_code)//-->
-      
-    </script><script language="JavaScript">
-    <!--
-    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'!-'+'-')
-    //-->
     </script>
-    <noscript><a href="http://www.omniture.com [1]" title="Web Analytics"><img src="http://dbs.112.2o7.net/b/ss/dbswebsitedev/1/H.13--NS/0 [3]" height="1" width="1" border="0" alt="" /></a></noscript>
   </head>
   <body data-page="about" class="about"><!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -247,6 +102,47 @@
     <script src="../resources/js/vendor/jquery.min.js"></script>
     <script src="../resources/js/vendor/bootstrap-digibank.js"></script>
     <script src="../resources/js/script.js"></script>
-    <script src="../resources/js/about.js"></script>
+    <script src="../resources/js/about.js"></script><!-- START OMNITURE CODE -->
+    <script language="JavaScript" src="../resources/js/s_code.js"></script>
+    <script language="JavaScript" src="../resources/js/site-catalyst.js"></script>
+    <script language="JavaScript" type="text/javascript">
+      <!-- /* You may give each page an identifying name, server, and channel on the next lines. */
+      
+      s.pageName=""
+      s.server=""
+      s.channel=""
+      s.pageType=""
+      s.prop1=""
+      s.prop2=""
+      s.prop3=""
+      s.prop4=""
+      s.prop5=""
+      
+      /* Conversion Variables */
+      s.campaign=""
+      s.state=""
+      s.zip=""
+      s.events=""
+      s.products=""
+      s.purchaseID=""
+      s.eVar1=""
+      s.eVar2=""
+      s.eVar3=""
+      s.eVar4=""
+      s.eVar5=""
+      
+      /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+      
+      var s_code=s.t();if(s_code)document.write(s_code)
+      //-->
+      
+    </script>
+    <script language="JavaScript" type="text/javascript">
+      <!--
+      if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+      //-->
+      
+    </script>
+    <noscript><a href="http://www.omniture.com" title="Web Analytics"><img src="http://dbs.112.2o7.net/b/ss/dbswebsitedev/1/H.13--NS/0" height="1" width="1" border="0" alt=""></a></noscript><!-- END OMNITURE CODE --> 
   </body>
 </html>

@@ -16,164 +16,19 @@
     <title>Digibank, Banking Activities Anytime Anywhere | DBS Bank Indonesia</title>
     <link rel="stylesheet" href="../resources/css/slick/slick.css">
     <link rel="stylesheet" href="../resources/css/base.css"><!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KNQGQL');</script><!-- End Google Tag Manager --><!-- SiteCatalyst code version: H.13. Copyright 1997-2007 Omniture, Inc. More info available at http://www.omniture.com [1] -->
-    <script src="/id/iwov-resources/js/s_code.js" language="JavaScript"></script>
-    <script src="/id/iwov-resources/js/site-catalyst.js"  language="JavaScript"></script>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KNQGQL');</script><!-- End Google Tag Manager -->
+    <!-- Google Analytic -->
     <script>
-      <!-- /* You may give each page an identifying name, server, and channel on the next lines. */
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
       
-      s.pageName=""
-      s.server=""
-      s.channel=""
-      s.pageType=""
-      s.prop1=""
-      s.prop2=""
-      s.prop3=""
-      s.prop4=""
-      s.prop5=""
-      /* Conversion Variables */
-      s.campaign=""
-      s.state=""
-      s.zip=""
-      s.events=""
-      s.products=""
-      s.purchaseID=""
-      s.eVar1=""
-      s.eVar2=""
-      s.eVar3=""
-      s.eVar4=""
-      s.eVar5=""
-      s.eVar8=""
-      
-      /* Hierarchy Variables */
-      
-      s.hier1=""
-      
-      /*********X6 Country SiteCatalyst Code Start here*********/
-      /********* Tab content and Article tracking sCode variable*********/
-      s.prop22=""
-      s.prop28=""
-      /*********Search Result Component Tracking*********/
-      s.prop23=""
-      if($("#scprop23").length > 0 && $("#scprop23").text().trim() != "")
-        {
-            var prop23var = $("#scprop23").text().trim();
-      prop23var = prop23var.substring(prop23var.indexOf("=") + 1);
-      s.prop23=prop23var
-      }
-      /*********Product info Component Tabs*********/
-      var urlPathName = window.location.pathname;
-      var level_name = urlPathName.match(/\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*))\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*)).page/);
-      if(level_name != null)
-      {           
-          level_name = level_name[1];
-          var tab_var_productInfo = $(".sub-nav-ul.productInfo li.active").text();
-          if(tab_var_productInfo != "")
-          {
-              s.prop22=level_name + "|" + tab_var_productInfo
-          }
-      }
-      /*********Tabbed Content Component Tabs &  Article browser component Tabs*********/
-      if($(".tabbed-content .tabbed-nav.tabs li.active").text() != "")
-      {
-          
-          var TabbedContentActive = $(".tabbed-content .tabbed-nav.tabs li.active:first").text();
-          if($(".article-browser .tabbed-nav.article li.active").text() != "")
-          {
-            var articleTabbedContent = $(".article-browser .tabbed-nav.article li.active:first").text();
-            s.prop22 = TabbedContentActive + ":" +  articleTabbedContent
-          }else{
-            s.prop22 = TabbedContentActive
-          }
-      }else if($(".article-browser .tabbed-nav.article li.active:first").text() != "")
-      {
-            
-            var articleTabbed = $(".article-browser .tabbed-nav.article li.active:first").text();
-            s.prop22 = articleTabbed
-      }
-          
-      /*********Article Discovery Block Component Tabs*********/
-      if($('.article-discovery-block .article li.active').data('category') != null)
-      {
-          var urlPathName = window.location.pathname;     
-          var level_name = urlPathName.match(/\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*))\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*)).page/);
-          if(level_name != null)
-          {           
-              level_name = level_name[1];
-              var activeTabbedContent = $('.article-discovery-block .tabbed-nav.article li.active:first').text();
-              s.prop22=level_name + "|" + activeTabbedContent
-          }
-      }
-      
-      /*********Article detail page - ArticleSummary component*********/
-      if($(".article-summary").length > 0)
-      {
-          var urlHref = window.location.href;
-          var urlPathName = window.location.pathname;
-          var country_Name = "";
-          var segment_Name = "";
-          var country_segment_other = urlHref.match(/\.com\.((\w+))\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*))\//);
-          if( country_segment_other != null && country_segment_other != "")
-          {
-              country_Name = country_segment_other[1];
-              segment_Name = country_segment_other[3];
-          //For IN & ID country
-          }else{ 
-          var country_segment = urlPathName.match(/^\/((\w+))\/((\w+\-*\_*\w*\-*\_*\w*\-*\_*\w*))\//);
-          if( country_segment != null && country_segment != "")
-          {       
-              country_Name = country_segment[1];
-              segment_Name = country_segment[3];
-          }
-          }
-          if(segment_Name.indexOf('treasures-private-client') != -1)
-          {       
-              segment_Name = 'tpc';
-          }else if(segment_Name.indexOf('private-banking') != -1)
-          {       
-              segment_Name = 'private-bank';
-          }else if(segment_Name.indexOf('personal') != -1)
-          {       
-              segment_Name = 'personal';
-          }else if(segment_Name.indexOf('treasures') != -1)
-          {       
-              segment_Name = 'treasures';
-          }
-          s.prop28=country_Name+ ":" + segment_Name + ":"  + $('.article-summary h1').text()
-      }
-      
-      /*********X6 Country SiteCatalyst Code End here*********/
-      /* Form Variables */
-      var urlPathName = window.location.pathname;
-      if(urlPathName.indexOf('dbs-forms/account-opening-wealth') > -1)
-      {
-        s.eVar8 = 'id:treasures:account opening form';
-        s.events='event1';
-      } else if(urlPathName.indexOf('dbs-forms/contact-me-wealth') > -1)
-      {
-        s.eVar8 = 'id:treasures:contact me form';
-        s.events='event1';
-      } else if(urlPathName.indexOf('dbs-forms/eappointment-wealth') > -1)
-      {
-        s.eVar8 = 'id:treasures:eappointment form';
-        s.events='event1';
-      } else {
-        s.eVar8 = "";
-        s.events= "";
-      }
+      ga('create', 'UA-87925627-1', 'auto');
+      ga('send', 'pageview');
       
       
-      
-      /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
-      
-      var s_code=s.t();if(s_code)document.write(s_code)//-->
-      
-    </script><script language="JavaScript">
-    <!--
-    if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'!-'+'-')
-    //-->
     </script>
-    <noscript><a href="http://www.omniture.com [1]" title="Web Analytics"><img src="http://dbs.112.2o7.net/b/ss/dbswebsitedev/1/H.13--NS/0 [3]" height="1" width="1" border="0" alt="" /></a></noscript>
   </head>
   <body data-page="home" class="home"><!-- Google Tag Manager (noscript) -->
     <noscript>
@@ -186,10 +41,13 @@
           <div class="row">
             <div class="col-md-6">
               <div class="headerIntro">
-                <h1>An innovative <span>new way</span> to bank</h1>
-                <h2 class="hidden-sm hidden-xs">Manage your financial activities with digibank mobile app</h2>
+                <h1>A more <span>intelligent way</span> to bank</h1>
+                <h2 class="hidden-sm hidden-xs">digibank makes banking hassle-free and life a whole lot easier</h2>
                 <p class="hidden-sm hidden-xs">Access your various daily banking activities through digibank app anytime anywhere. Check your balance, budgeting, fund transfer, manage your bills, prepaid reloads, and access to Virtual Assistant from your mobile phone 24/7. Not only that, you can also get access from DBS branch services.</p>
-                <div class="coming-soon">Coming soon to <span class="coming-soon--apple">App Store</span> <span class="sr-only">and</span> <span class="coming-soon--android">Google Play</span></div>
+                <ul class="download download--header">
+                  <li><a href="https://itunes.apple.com/id/app/digibank-by-dbs/id1170988769&amp;utm_source=Pweb&amp;utm_medium=iphone&amp;utm_campaign=bttnapps-iphone-home&amp;utm_content=buttonApps" target="_blank" class="downloadBadge apple"><span>Download on the App Store</span></a></li>
+                  <li><a href="https://play.google.com/store/apps/details?id=com.dbs.id.pt.digitalbank&amp;utm_source=Pweb&amp;utm_medium=android&amp;utm_campaign=bttnapps-android-home&amp;utm_content=buttonApps" target="_blank" class="downloadBadge android"><span>Get it on Google Play</span></a></li>
+                </ul>
               </div>
             </div>
             <div class="col-md-6">
@@ -200,28 +58,28 @@
       </header>
       <section class="featuresOverview">
         <div class="container">
-          <h2 class="sectionTitle visible-sm visible-xs">Manage your <span class="yellow">financial activities</span> with digibank mobile app</h2>
+          <h2 class="sectionTitle visible-sm visible-xs">digibank makes <span class="yellow">banking hassle-free</span> and life a whole lot easier</h2>
           <p class="lead visible-sm visible-xs">Access your various daily banking activities through digibank app anytime anywhere. Check your balance, budgeting, fund transfer, manage your bills, prepaid reloads, and access to Virtual Assistant from your mobile phone 24/7. Not only that, you can also get access from DBS branch services.</p>
           <ul class="featuresList row mb0">
             <li class="col-md-3 col-sm-6">
               <div class="feature__payment"></div>
-              <h4>VISA debit card</h4>
-              <p>Debit card for your banking convenience and to compliment to your lifestyle</p>
+              <h4>Easy Transfer</h4>
+              <p>Transfer online swiftly with payee list.</p>
             </li>
             <li class="col-md-3 col-sm-6">
               <div class="feature__debit"></div>
               <h4>No more OTP</h4>
-              <p>Dynamic and safe online security systems, more convenient than OTP</p>
+              <p>Enhance Security Safer and more convenient security system. No more token. No more OTP.</p>
             </li>
             <li class="col-md-3 col-sm-6">
               <div class="feature__va"></div>
-              <h4>Virtual Assistant</h4>
-              <p>24/7 Virtual Assistant with artificial intelligence - the first in Asia.</p>
+              <h4>Online Deposit Placement</h4>
+              <p>Placing your time deposit has never been easier.</p>
             </li>
             <li class="col-md-3 col-sm-6">
               <div class="feature__pfm"></div>
               <h4>Spending Tracker</h4>
-              <p>Easier management of your financials with Spending Tracker.</p>
+              <p>Manage your spending better with real time tracker.</p>
             </li>
           </ul>
           <div class="sectionCTA"><a href="features.html" class="btn-feature">View <i class="hidden-320">key</i> features <span></span></a></div>
@@ -278,16 +136,6 @@
           </div>
         </div>
       </section>
-      <section class="digibankVideo">
-        <div class="digibankVideo__laptop">
-          <div class="digibankVideo__content">
-            <iframe src="https://www.youtube.com/embed/4ztaq6Cee2c?iv_load_policy=3&amp;amp;modestbranding=1&amp;amp;autoplay=0&amp;amp;controls=1&amp;amp;showinfo=1&amp;amp;wmode=opaque&amp;amp;branding=1&amp;amp;autohide=1&amp;amp;rel=0&amp;amp;enablejsapi=1" frameborder="0" allowfullscreen="" class="about-iframevid about-iframevid--home hidden-md hidden-lg"></iframe>
-            <div class="about-video about-video--home hidden-sm hidden-xs">
-              <div id="homeVideo" class="background-video"><img src="../resources/images/home-vid-background.jpg" alt="" class="placeholder-image"><a id="btnHomeVideo" href="#" class="btn-play"></a></div>
-            </div>
-          </div>
-        </div>
-      </section>
       <section class="mediaClippings">
         <div class="container">
           <ul class="mediaList row">
@@ -308,7 +156,7 @@
             <li class="col-sm-4">
               <div class="logo"><img src="../resources/images/media/marketeers.png" alt="Marketeers"></div>
               <blockquote> 
-                <p>&ldquo;To create a “fintech-like” workforce, the bank encourages its people to embrace a digital mindset.&rdquo;</p>
+                <p>&ldquo;To create a &lsquo;fintech-like&rsquo; workforce, the bank encourages its people to embrace a digital mindset.&rdquo;</p>
                 <footer>Marketeers</footer>
               </blockquote>
             </li>
@@ -388,6 +236,47 @@
               }
           }
       });
+    </script><!-- START OMNITURE CODE -->
+    <script language="JavaScript" src="../resources/js/s_code.js"></script>
+    <script language="JavaScript" src="../resources/js/site-catalyst.js"></script>
+    <script language="JavaScript" type="text/javascript">
+      <!-- /* You may give each page an identifying name, server, and channel on the next lines. */
+      
+      s.pageName=""
+      s.server=""
+      s.channel=""
+      s.pageType=""
+      s.prop1=""
+      s.prop2=""
+      s.prop3=""
+      s.prop4=""
+      s.prop5=""
+      
+      /* Conversion Variables */
+      s.campaign=""
+      s.state=""
+      s.zip=""
+      s.events=""
+      s.products=""
+      s.purchaseID=""
+      s.eVar1=""
+      s.eVar2=""
+      s.eVar3=""
+      s.eVar4=""
+      s.eVar5=""
+      
+      /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+      
+      var s_code=s.t();if(s_code)document.write(s_code)
+      //-->
+      
     </script>
+    <script language="JavaScript" type="text/javascript">
+      <!--
+      if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+      //-->
+      
+    </script>
+    <noscript><a href="http://www.omniture.com" title="Web Analytics"><img src="http://dbs.112.2o7.net/b/ss/dbswebsitedev/1/H.13--NS/0" height="1" width="1" border="0" alt=""></a></noscript><!-- END OMNITURE CODE --> 
   </body>
 </html>
