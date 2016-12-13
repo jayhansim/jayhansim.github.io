@@ -86,32 +86,19 @@ $(function(){
     //     }
     // }
 
-    // insert message here
-    var infobarMessage = "Scheduled maintenance on 8 Dec 16 from 6am - 9am. Sorry for inconvenience.";
+    // insert message here (recommended < 70 char)
+    var infobarMessage = "Scheduled maintenance on 8 Dec 16, 6am to 9am. Sorry for inconvenience.";
 
     // change Cookie name
     var cookieName = "infobar";
 
 
     if (!$.cookie(cookieName)) {
-
-        $('body').prepend('<div class="infobar barclose"><div class="container"><div class="infobar-content"><p>' + infobarMessage + '</p></div><div class="infobar-close"><a href="#" id="infobar-close"></a></div></div></div>').delay(0).queue(function(){
+        $('body').prepend('<div class="infobar barclose"><div class="container"><div class="infobar-content"><p>' + infobarMessage + '</p></div><div class="infobar-close"><a href="#" id="infobar-close"></a></div></div></div>').delay(300).queue(function(){
             $('.infobar').removeClass('barclose');
         });
         $('body').addClass('infobar-show');
-
-
-        // setTimeout(function(){
-        // $('.popup-ebook').fancybox({
-        //   width: 820,
-        //   height: 480,
-        //   minHeight: 480,
-        //   padding: 8,
-        // }).trigger('click');
-        // }, 15000);
-
-        // $.cookie('infobar', '1', {expires: 7});
-      }
+    }
 
     
 
@@ -120,5 +107,6 @@ $(function(){
         $('body').removeClass('infobar-show');
         $('.navbar').css('top', 0);
         e.preventDefault();
+        $.cookie(cookieName, '1', {expires: 7});
     });
 }(jQuery));
