@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FAQs on Mobile Banking - Find a list of questions and answers related to digibank mobile banking. Get your queries answered by our experts. Visit to know more.">
+    <meta name="keywords" content="mobile banking, digital banking, online banking queries, mobile banking faqs, digibank faqs">
+	<meta property="og:title" content="digibank FAQs - Download Mobile Banking App For Android & iOS" > 
+    <meta property="og:type" content="website" > 
+    <meta property="og:url" content="http://www.dbs.com/digibank/in/faq.html"> 
+    <meta property="og:image" content="http://www.dbs.com/digibank/in/images/sharer.png"> 
+    <meta property="og:description" content="FAQs on Mobile Banking - Find a list of questions and answers related to digibank mobile banking. Get your queries answered by our experts. Visit to know more." >
+    <title>digibank FAQs - Download Mobile Banking App For Android & iOS</title>
+    <link rel="shortcut icon" href="images/dbs-fav.ico" type="image/x-icon">
+    <link rel="icon" href="images/dbs-fav.ico" type="image/x-icon">
+	<link href="css/plugins/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/layout.css" rel="stylesheet">
+    <!-- HTML5 Shim IE8 support of HTML5 elements and media queries -->
+    <!--[if IE]>
+        <script src="js/vendor/html5shiv.js"></script>
+    <![endif]-->
+    <!-- START OMNITURE CODE -->
+    <script language="JavaScript" src="js/s_code.js"></script>
+    <script language="JavaScript" type="text/javascript">
+    <!--
+        /* You may give each page an identifying name, server, and channel on the next lines. */
+        s.pageName=""
+        s.server=""
+        s.channel=""
+        s.pageType=""
+        s.prop1=""
+        s.prop2=""
+        s.prop3=""
+        s.prop4=""
+        s.prop5=""
+        /* Conversion Variables */
+        s.campaign=""
+        s.state=""
+        s.zip=""
+        s.events=""
+        s.products=""
+        s.purchaseID=""
+        s.eVar1=""
+        s.eVar2=""
+        s.eVar3=""
+        s.eVar4=""
+        s.eVar5=""
+        /************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+        var s_code=s.t();if(s_code)document.write(s_code)
+    //-->
+    </script>
+    <script language="JavaScript" type="text/javascript">
+        <!--
+        if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+        //-->
+    </script>
+    <noscript><img src="http://digibank.112.2o7.net/b/ss/digibank/1/H.24.3--NS/0"height="1" width="1" border="0" alt="" /></noscript>
+    <!-- END OMNITURE CODE -->
+	
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PJ28LD"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script language="JavaScript" type="text/javascript">
+		(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+		new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+		j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+		'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+		})(window,document,'script','dataLayer','GTM-PJ28LD');
+	</script>
+	<!-- End Google Tag Manager -->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="headerMenu" class="navbar navbar-default  navbar-fixed-top header-two"></nav>
+    <section class="header-bar">
+         <div class="container">
+            <div class="row">
+                <h3>FAQ</h3>
+            </div>
+         </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="search-box">
+                        <input type="text" id="searchBox" placeholder="Type a keyword or a question" class="col-md-10 col-xs-9">
+                        <a href="#" id="faqSearch" title="Search" class="btn btn-default small col-md-2 col-xs-3"><span class="icons search"></span></a>
+                    </div>
+                </div>
+                <div class="clearfix mTop-30 hidden-xs"></div>
+                <div class="col-md-12 col-sm-12 mob-toggle-box">
+                    <div id="faqBox"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer id="footer" class="footer-box"></footer>
+	<div id="kasistoChat" class="hide"></div>
+    <script src="js/vendor/jquery-1.11.2.js"></script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script type="text/javascript">
+        $(function(){
+            
+            $.clientSearchInit("#searchBox",".inside-content-box");
+            $('#faqSearch').on('click',function(){
+                window.location='faq-search-results.html?search='+$('#searchBox').val()+'';
+                e.preventDefault();
+            });
+            
+            
+            $.ajax({
+                url:'data/faq.json',
+                method:"GET",
+                dataType: "json",
+                contentType: 'application/json; charset=utf-8',
+                success:function(json){
+                    var html ='';
+                    var showChar = 250;
+                     $.each(json.Data.Content, function (key, data) {
+                                              
+                        html = '<div  class="lbl-content-box mob-purple"> '+
+                        '        <hr class="hidden-xs" />'+
+                        '        <hr class="hidden-sm hidden-md hidden-lg" />'+
+                        '        <h4>'+data.ProductCategory+' <span class="count">('+data.Count+')</span></h4>'+
+                        '        <div class="row">';
+                        
+                        //Generate the categories Content
+                        $.each(data.ProductData,function(index,prodData){
+                            var _answer  = prodData.answer;
+                            var  preText ='';
+                            html+='<div class="inside-content-box col-md-4 col-sm-4"> '+
+                                '     <label><span class="title">'+prodData.question+'</span><span class="chevron"></span></label> '+
+                                '     <div class="mob-content-box"><div class="faq-full-content hide">'+_answer+'</div><div class="hidden-xs faq-preview-content">';
+                            
+                            if (_answer.length > showChar) {
+                                preText = _answer.replace(/(<([^>]+)>)/ig,"").substr(0, showChar);
+                                //preText = html_substr(_answer, showChar)    ;
+                                
+                                html+= preText+'...</div><p class="hidden-xs"><a href="#" class="see-more">more <span class="icons arrow-left-small"></span></a></p>';
+                            }else{
+                                html+=_answer+'</div>';
+                            }
+                               
+                            html+='</div></div>';
+                            if ((index+1)%3 == 0) {
+                                html+='<div class="clearfix"></div>';
+                            }
+                        });
+                        
+                        html+='</div></div>';
+                        $('#faqBox').append(html);
+                        
+                    });
+                   
+                    //Toggle function  
+                    $('.see-more').on('click',function(e){
+                        var _this = $(this),
+                        parent = _this.parents('.mob-content-box'),
+                        fullContent = parent.find('.faq-full-content'),
+                        previewContent = parent.find('.faq-preview-content');
+                        
+                        if (fullContent.hasClass('hide')) {
+                            fullContent.removeClass('hide');
+                            previewContent.hide();
+                            _this.remove();
+                            
+                        }
+                        e.preventDefault();
+                    });
+                    
+                    $.mobileToggleInit('.mob-toggle-box .inside-content-box','.mob-content-box');
+                },
+                error: function (xhr, status, error) {
+                   console.log(error + " - ajax not fetch" + status);
+                },
+                timeout:10000 
+            });
+        
+        
+            function html_substr( str, count ) {
+    
+                var div = document.createElement('div');
+                div.innerHTML = str;
+                
+                walk( div, track );
+                
+                function track( el ) {
+                    if( count > 0 ) {
+                        var len = el.data.length;
+                        count -= len;
+                        if( count <= 0 ) {
+                            el.data = el.substringData( 0, el.data.length + count );
+                        }
+                    } else {
+                        el.data = '';
+                    }
+                }
+                
+                function walk( el, fn ) {
+                    var node = el.firstChild;
+                    do {
+                        if( node.nodeType === 3 ) {
+                            fn(node);
+                        } else if( node.nodeType === 1 && node.childNodes && node.childNodes[0] ) {
+                            walk( node, fn );
+                        }
+                    } while( node = node.nextSibling );
+                }
+                return div.innerHTML;
+            }
+        });
+        
+    </script>
+</body>
+</html>

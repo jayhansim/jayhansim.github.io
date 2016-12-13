@@ -1,0 +1,53 @@
+
+{
+  "Data": {
+    "ProductCount": 8,
+    "Content": [
+      {
+        "ProductCategory": "Information",
+        "Count": 3,
+        "ProductData": [
+          {
+            "question": "How much interest can I earn?",
+            "answer": "<p>You can earn up to 7% interest on your savings account (also known as digiSavings). However, in practice it's a little more complicated. You will earn:</p><ul class='disc'><li>5% interest below 1 lakh balance</li><li>6% interest from 1 lakh to less than 5 lakhs</li><li>7% interest from 5 lakhs to less than 1 crore</li><li>4% interest for 1 crore and above</li></ul>"
+          },
+          {
+            "question": "Where can I use digibank?",
+            "answer": "<p>We are digital and can serve you from any corner of India as long as you are connected to the internet. Our partner network is present in many cities across India. Please see details <a href='cities.html'>here</a></p>"
+          },
+          {
+            "question": "What kinds of fees does digibank charge?",
+            "answer": "<p>For the latest information on fees, please refer to our <a href='rates-and-fees.html' target='_blank'>Rates & Fees</a> page.</p><p>Withdrawing cash at any ATM in India is completely free - even if you withdraw more than 5 times in the same month!</p>"
+          }
+        ]
+      },
+      {
+        "ProductCategory": "Troubleshooting",
+        "Count": 5,
+        "ProductData": [
+          {
+            "question": "I've lost my debit card.",
+            "answer": "<p>You should block your debit card immediately by accessing the dashboard menu within the digibank app. Once you've done this, you can request a new debit card.</p>"
+          },
+          {
+            "question": "I've lost my phone / I can't access the app.",
+            "answer": " <p>The first thing you should do is ensure that no one else can access your debit card and bank account. If you think you were logged in to the app when you lost your mobile, please immediately call:</p><ul class='disc'><li>1800-210-3456 or 1800-103-8578 toll-free within India, or</li><li>+91-44-66854585 or +91-44-49021180 if dialing internationally</li></ul><p>If you are able, you should log in to the digibank app on another smart phone and block your debit card to prevent possible misuse.</p><p>Once you've taken these steps, you can download digibank onto your replacement phone.</p>"
+          },
+          {
+            "question": "I think there's been fraudulent activity on my account.",
+            "answer": "<p>We will work with you to resolve any issues swiftly and responsibly. Please call us as soon as possible:</p><ul class='disc'><li>1800-210-3456 or 1800-103-8578 toll-free within India, or</li><li>+91-44-6685-4585 or +91-44-4902-1180 if dialing internationally</li></ul>"
+          },
+          {
+            "question": "I've forgotten my debit card PIN.",
+            "answer": "<p>You can reset your debit card PIN from the debit card details page within the digibank app.</p>"
+          },
+          {
+            "question": "I've forgotten my username.",
+            "answer": "<p>You can retrieve your username by tapping on the 'forgot username' link on the login page of the digibank app.</p>"
+          }
+        ]
+      }
+    ]
+  }
+}
+
